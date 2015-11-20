@@ -1,0 +1,149 @@
+.transition {
+	@include transition-property(all);
+  	@include transition-duration(1s);
+  	@include transition-timing-function(ease-in);
+}
+
+.profile {
+	font-family: 'Oswald';
+	font-weight: 300;
+	margin: 0;
+	.img-wrp {
+		//position: absolute;
+		z-index: 0;
+		top: 0;
+		width: 100%;
+		@include background-size(cover);
+		height: 45%;
+		.avatar {
+			margin-top: -33px;
+			img {
+				width: 90px;
+				height: 90px;
+			}
+			h3 {
+				font-size: 21px;
+				color: $white;
+				margin: 1rem 0 0 0;
+				@include text-shadow(1px 1px 2px rgba(0,0,0,0.22));
+			}
+			&.resize {
+				text-align: left;
+				@include display-flex;
+            	@include align-items(center);
+            	@include justify-content(center);
+				img {
+					width: 48px;
+					height: 48px;
+					margin: 0 0 0 15px;
+				}
+				h3 {
+					margin: 0 15px;
+				}
+			}
+		}
+		.tab-content {
+			&:after {
+				content: '';
+				display: table;
+				clear: left;
+			}
+		}
+		
+	}
+	.listing-icons {
+		padding: 17px 0;
+		border-bottom: 1px solid #bababa;
+		clear: left;
+		width: 100%;
+		height: auto;
+		margin-top: -6px;
+		background-color: white;
+		&:after {
+			content: '';
+			display: table;
+			clear: left;
+		}
+		a {
+			float: left;
+			text-align: center;
+			width: 33.33%;
+			&:hover, &:focus {
+				text-decoration: none;
+			}
+		}
+		span {
+			clear: left;
+			color: $dark-gray;
+			display: block;
+			font-size: 13px;
+			font-weight: normal;
+			text-transform: uppercase;
+		}
+		i {
+			width: 100%;
+			display: block;
+			color: $primary-color;
+			font-size: 28px;
+			font-weight: 400;
+			font-style: normal;
+			line-height: 1.25em;
+		}
+	}
+
+	.contact-list-view {
+		list-style: none;
+		padding: 0 ;
+		padding-top: 1.3rem;
+		li {
+			span {
+				font-size: 1.6rem;
+				font-weight: 400;
+				margin-right: 23px;
+				color: $dark-gray2;
+			}
+			span.prfl-ico {
+				color: $dark-gray1;
+			}
+			padding: 1.3rem 0;
+			margin: 0 20px;
+			margin-right: 0;
+			display: flex;
+			border-bottom: solid 1px #ebebeb;
+			@include transition(all 1s ease);
+			&:first-of-type {
+				padding-top:0;
+			}
+			&:last-of-type {
+				margin-bottom: 2px;
+			}
+			a {
+				color: $dark-gray2;
+				&:hover, &:focus {
+					color: $primary-color;
+					text-decoration: none;
+				}
+			}
+			* {
+
+				text-align: left;
+				align-items: center;
+				justify-content: center;
+				display: -webkit-box;
+				display: -webkit-flex;
+				display: -ms-flexbox;
+				display: flex;
+				-webkit-box-align: center;
+				-webkit-align-items: center;
+				-ms-flex-align: center;
+			}
+		}
+	}
+}
+
+.tab-pane.bucketlist-section {
+	position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    font-family: 'Merriweather'!important;
+}

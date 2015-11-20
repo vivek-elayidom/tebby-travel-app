@@ -1,0 +1,1223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel App</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/travel-app.css">
+  <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.css">
+  <link rel="stylesheet" href="assets/mediaelement/mediaelementplayer.css">
+  <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="google-map z0"></div>
+    <div class="page">
+      <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Logo</a>
+          </div>
+          <nav id="bs-navbar" class="collapse navbar-collapse">
+
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#">Trips</a></li>
+              <li><a href="#">Bucket list</a></li>
+              <li><a href="#">My account</a></li>
+              <li class="filled"><a href="#">Sign in</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      <div class="container-fluid content-wrapper">
+        <div class="h100">
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100">
+            <!-- Empty Transparent Column - Google Map Seethrough -->
+          </div>
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100">
+            <!-- Empty Section -->
+          </div>
+
+          <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100 box-shadow-min bg-white rm-offset" data-sr="enter right scale 0%, move 100%, wait .2s">
+
+            <section class="trips  bg-grey h100" id="discussion-list">
+              <div class="fixed-ch">
+                <div class="img-wrp">
+                  <img src="assets/images/kashmir.jpg" alt="" >
+
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 offset-T1">
+                    <div class="pull-right offset-L1 brgr-bttn"><i class="fa fa-navicon text-white"></i></div>
+                  </div>
+                  <div class="inform-text">
+                    <i class="fa fa-info-circle"></i>
+                    <span>Visit to Nainital Mussoorie and Dehradun</span>
+                  </div>
+                </div>
+                <div class="page-header bg-white trp-hd">
+
+                  <ul class="nav nav-tabs nav-justified" role="tablist">
+                    <li role="presentation" class="active">
+                      <a href="#discussion" aria-controls="discussion" role="tab" data-toggle="tab">Discussion</a>
+                    </li>
+                    <li role="presentation">
+                      <a href="#listings" aria-controls="listings" role="tab" data-toggle="tab">Listings</a>
+                    </li>
+                    <li role="presentation">
+                      <a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Gallery</a>
+                    </li>
+                    <li role="presentation">
+                      <a href="#logs" aria-controls="logs" role="tab" data-toggle="tab">Logs</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="discussion"> 
+                <div class="tab-body h100">
+                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 h100 rm-offset">
+                    <div role="tabpanel" class="h100">
+                      <div class="tab-content h100">
+                        <div role="tabpanel" class="tab-pane h100 active" id="discussion">
+                          <div class="discussion-Tab">
+                            <div class="panel panel-default left">
+                              <div class="panel-heading">
+                                <div class="pull-left"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt=""></div>
+                                <div class="pull-left">Madhusoodanan Nair</div>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                                    <i class="fa fa-bed fa-lg"></i>
+                                  </div>
+                                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h5>Movenpick Hotel &amp; Spa</h5>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        5-star hotel
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                        Rs.6686 per night
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>Address: </p>
+                                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                                        <p>Phone: 080 4300 1000</p>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pull-left">
+                                          <div class="offset-T-5">
+                                            <button type="button" class="btn btn-default">Share</button>
+                                            <button type="button" class="btn btn-primary">View</button>
+                                            <div class="clearfix"></div>
+                                          </div>
+                                        </div>
+                                        <div class="pull-right date-time">
+                                          <small class="text-muted text-right">
+                                            12:56PM, Thursday, 17 September 2015
+                                          </small>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default right">
+                              <div class="panel-heading">
+                                <div class="pull-right"><img src="assets/images/avatar/avatar2.jpg" class="img-circle" alt=""></div>
+                                <div class="pull-right">Vyloppilli Sreedhara Menon</div>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                                    <i class="fa fa-bed fa-lg"></i>
+                                  </div>
+                                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h5>Movenpick Hotel &amp; Spa</h5>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        5-star hotel
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                        Rs.6686 per night
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>Address: </p>
+                                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                                        <p>Phone: 080 4300 1000</p>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pull-right">
+                                          <div class="offset-T-5">
+                                            <button type="button" class="btn btn-default">Share</button>
+                                            <button type="button" class="btn btn-primary">View</button>
+                                            <div class="clearfix"></div>
+                                          </div>
+                                        </div>
+                                        <div class="pull-left date-time">
+                                          <small class="text-muted text-right">
+                                            12:56PM, Thursday, 17 September 2015
+                                          </small>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default left">
+                              <div class="panel-heading">
+                                <div class="pull-left"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt=""></div>
+                                <div class="pull-left">Madhusoodanan Nair</div>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quam quas consequatur veniam vel aut ullam. Obcaecati quidem, cum magnam culpa ad mollitia, atque similique minima incidunt quod dolore a!</p>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="pull-right date-time">
+                                      <small class="text-muted text-right">
+                                        12:56PM, Thursday, 17 September 2015
+                                      </small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="sec-chat">
+                            <div class="input-group">
+                              <input type="text" class="form-control">
+                              <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button"><i class="fa fa-paper-plane"></i></button>
+                                <button class="btn btn-secondary" type="button"><i class="fa fa-paperclip"></i></button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane h100" id="listings">
+
+                          <div class="listings-tab">
+                            <div class="panel panel-default">
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                                    <i class="fa fa-bed fa-lg"></i>
+                                  </div>
+                                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h5>Movenpick Hotel &amp; Spa</h5>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        5-star hotel
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                        Rs.6686 per night
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>Address: </p>
+                                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                                        <p>Phone: 080 4300 1000</p>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pull-right">
+                                          <div class="offset-T-5">
+                                            <button type="button" class="btn btn-default">Share</button>
+                                            <button type="button" class="btn btn-primary">View</button>
+                                            <div class="clearfix"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                                    <i class="fa fa-bed fa-lg"></i>
+                                  </div>
+                                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h5>Movenpick Hotel &amp; Spa</h5>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        5-star hotel
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                        Rs.6686 per night
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>Address: </p>
+                                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                                        <p>Phone: 080 4300 1000</p>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pull-right">
+                                          <div class="offset-T-5">
+                                            <button type="button" class="btn btn-default">Share</button>
+                                            <button type="button" class="btn btn-primary">View</button>
+                                            <div class="clearfix"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                                    <i class="fa fa-bed fa-lg"></i>
+                                  </div>
+                                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h5>Movenpick Hotel &amp; Spa</h5>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        5-star hotel
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                        Rs.6686 per night
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>Address: </p>
+                                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                                        <p>Phone: 080 4300 1000</p>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pull-right">
+                                          <div class="offset-T-5">
+                                            <button type="button" class="btn btn-default">Share</button>
+                                            <button type="button" class="btn btn-primary">View</button>
+                                            <div class="clearfix"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                                    <i class="fa fa-bed fa-lg"></i>
+                                  </div>
+                                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h5>Movenpick Hotel &amp; Spa</h5>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        5-star hotel
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                        Rs.6686 per night
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>Address: </p>
+                                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                                        <p>Phone: 080 4300 1000</p>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pull-right">
+                                          <div class="offset-T-5">
+                                            <button type="button" class="btn btn-default">Share</button>
+                                            <button type="button" class="btn btn-primary">View</button>
+                                            <div class="clearfix"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane h100" id="gallery">
+                          <div class="gallery-tab">
+                          <div class="photo-grid">
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/sea.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/agra.JPG" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/china.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/hampi.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item two-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/houseboat.JPG" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/kathakali.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/korea.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/ladakh.JPG" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item two-two">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/lighthouse.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/ny.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/paris.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/hill.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/taj.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/kashmir.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane h100" id="logs">
+                        <div class="new-log">
+
+                          <div class="alert alert-dismissible fade in" role="alert">
+                            <p>Select the listings you want to be included in this log. Click each listing to add text, audio, video or image logs to it. You can add a date and rearrange the order of the listings by dragging.</p>
+                            <a href="#" class="pull-right" data-dismiss="alert" aria-label="Close">Close</a>
+                            <div class="clearfix"></div>
+                          </div>
+
+                          <div class="control-bar">
+                            <div class="pull-left">
+                              <a href="#" class="highlight" id="save-log"><i class="fa fa-save"></i> Save</a>
+                            </div>
+                            <div class="pull-right">
+                              <a href="#" id="cancel-log"><i class="fa fa-close"></i> Cancel</a>
+                            </div>
+                          </div>
+
+                          <div class="clearfix"></div>
+
+                          <ul class="list-unstyled" id="sortable-list">
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Trecking &amp; River Rafting</span>
+                                </label>
+                              </div>
+                              <div class="log-details">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <input type="text" class="form-control date-picker" value="23/7/15">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="btn-group attach-list pull-right" role="group">
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-image fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="image">
+                                      </a>
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-video-camera fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="video">
+                                      </a>
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-microphone fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="audio">
+                                      </a>
+                                    </div>
+                                    <div class="btn-group pull-right" role="group">
+                                      <a href="#" class="btn btn-success attach-icon">
+                                        <i class="fa fa-paperclip fa-lg"></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <textarea class="form-control" rows="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cumque ratione, ipsum dolorum? Ut officiis fugiat vero mollitia doloribus! Nobis vitae a ex possimus, sint dolorum molestiae officiis illum ipsa.
+                                    </textarea>
+                                    <div class="clearfix"></div>
+                                    <div class="upload-preview">
+                                      <!-- Upload Preview -->
+                                      <div class="img-preview"><img src="assets/images/kashmir.jpg">
+                                        <button type="button" class="close" aria-label="Close">&times;</button>
+                                      </div>
+                                      <div class="img-preview">
+                                        <video class="media-xs" src="assets/video/other.mp4"></video>
+                                        <button type="button" class="close" aria-label="Close">&times;</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="log-preview" data-content="1">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <input type="text" class="form-control date-picker" value="23/7/15" readonly="readonly">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="btn-group pull-right" role="group">
+                                      <a href="#" class="btn btn-success edit-log-icon">
+                                        <i class="fa fa-edit fa-lg"></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <!-- <video width="320" height="240" id="player1">
+
+                                      <source type="video/youtube" src="http://www.youtube.com/watch?v=nOEw9iiopwI" />
+
+                                    </video> -->
+
+                                    <div id="log-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+                                      <div class="carousel-inner">
+                                        <div class="item active">
+                                          <video class="media-lg" src="assets/video/other.mp4" width="320" height="180"></video>
+                                        </div>
+                                        <div class="item">
+                                          <img src="assets/images/rht-img.jpg" alt="">
+                                        </div>
+                                        <div class="item">
+                                          <video class="media-lg" src="assets/video/other.mp4" width="320" height="180"></video>
+                                        </div>
+                                      </div>
+                                      <a class="left carousel-control" href="#log-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                                      <a class="right carousel-control" href="#log-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                                    </div>
+
+                                    <div class="clearfix"></div>
+
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cumque ratione, ipsum dolorum? Ut officiis fugiat vero mollitia doloribus! Nobis vitae a ex possimus, sint dolorum molestiae officiis illum ipsa.</p>
+
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Boats, Sailing and Charters</span>
+                                </label>
+                              </div>
+                              <div class="log-details">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <input type="text" class="form-control date-picker" value="23/7/15">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="btn-group attach-list pull-right" role="group">
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-image fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="image">
+                                      </a>
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-video-camera fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="video">
+                                      </a>
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-microphone fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="audio">
+                                      </a>
+                                    </div>
+                                    <div class="btn-group pull-right" role="group">
+                                      <a href="#" class="btn btn-success attach-icon">
+                                        <i class="fa fa-paperclip fa-lg"></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <textarea class="form-control" rows="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cumque ratione, ipsum dolorum? Ut officiis fugiat vero mollitia doloribus! Nobis vitae a ex possimus, sint dolorum molestiae officiis illum ipsa.
+                                    </textarea>
+                                    <div class="clearfix"></div>
+                                    <div class="upload-preview">
+                                      <!-- Upload Preview -->
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="log-preview" data-content="0">
+                                No Content
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Fishing</span>
+                                </label>
+                              </div>
+                              <div class="log-details">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <input type="text" class="form-control date-picker" value="23/7/15">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="btn-group attach-list pull-right" role="group">
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-image fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="image">
+                                      </a>
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-video-camera fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="video">
+                                      </a>
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-microphone fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="audio">
+                                      </a>
+                                    </div>
+                                    <div class="btn-group pull-right" role="group">
+                                      <a href="#" class="btn btn-success attach-icon">
+                                        <i class="fa fa-paperclip fa-lg"></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <textarea class="form-control" rows="2"></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Golf, Golf Courses and Golf Cross</span>
+                                </label>
+                              </div>
+                              <div class="log-details">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <input type="text" class="form-control date-picker" value="23/7/15">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="btn-group attach-list pull-right" role="group">
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-image fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="image">
+                                      </a>
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-video-camera fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="video">
+                                      </a>
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-microphone fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="audio">
+                                      </a>
+                                    </div>
+                                    <div class="btn-group pull-right" role="group">
+                                      <a href="#" class="btn btn-success attach-icon">
+                                        <i class="fa fa-paperclip fa-lg"></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <textarea class="form-control" rows="2"></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Trecking &amp; River Rafting</span>
+                                </label>
+                              </div>
+                              <div class="log-details">
+                                <div class="row">
+                                  <div class="col-md-6">
+                                    <input type="text" class="form-control date-picker" value="23/7/15">
+                                  </div>
+                                  <div class="col-md-6">
+                                    <div class="btn-group attach-list pull-right" role="group">
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-image fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="image">
+                                      </a>
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-video-camera fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="video">
+                                      </a>
+                                      <a href="#" class="btn btn-success">
+                                        <i class="fa fa-microphone fa-lg"></i>
+                                        <input type="file" name="" id="" data-type="audio">
+                                      </a>
+                                    </div>
+                                    <div class="btn-group pull-right" role="group">
+                                      <a href="#" class="btn btn-success attach-icon">
+                                        <i class="fa fa-paperclip fa-lg"></i>
+                                      </a>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-md-12">
+                                    <textarea class="form-control" rows="2"></textarea>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Mountain Biking and Cycling</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Canoeing</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Paragliding</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Cycling and Mountain Biking</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Trecking</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Hiking</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Birdwatching</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>River Cruise</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Boating &amp; Fishing</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Water Sports</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Skiing and Snowboarding</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Tramping, Hiking, Guided Walks</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li>
+                              <div class="checkbox">
+                                <label>
+                                  <input type="checkbox" value="">
+                                  <span>Adventure</span>
+                                </label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="logs-tab">
+                          <button class="btn addNew" id="add-new-log">Add New Log</button>
+                          <ul class="log-view-listing">
+                              <li>
+                              <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                              <span>22/7/14</span>
+                              </div>
+                              <div class="rht-algn">
+                                <h4>River rafting in kodai is awesome
+                                <span class="toltp-file">
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                                <i class="fa fa-file-text"></i>
+                                </a>
+                                </span></h4>
+                                <small>Sinu moosa</small>
+                                <p>
+                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                                </p>
+                                <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                                </div>
+                              </li>
+                              <li>
+                              <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                              <span>22/7/14</span>
+                              </div>
+                              <div class="rht-algn">
+                                <h4>River rafting in kodai is awesome
+                                <span class="toltp-file">
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                                <i class="fa fa-file-text"></i>
+                                </a>
+                                </span></h4>
+                                <small>Sinu moosa</small>
+                                <p>
+                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                                </p>
+                                <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                                 </div>
+                              </li>
+                              <li>
+                              <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                              <span>22/7/14</span>
+                              </div>
+                              <div class="rht-algn">
+                                <h4>River rafting in kodai is awesome
+                                <span class="toltp-file">
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                                <i class="fa fa-file-text"></i>
+                                </a>
+                                </span></h4>
+                                <small>Sinu moosa</small>
+                                <p>
+                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                                </p>
+                                <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                               </div>
+                              </li>
+                              <li>
+                              <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                              <span>22/7/14</span>
+                              </div>
+                              <div class="rht-algn">
+                                <h4>River rafting in kodai is awesome
+                                <span class="toltp-file">
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                                <i class="fa fa-file-text"></i>
+                                </a>
+                                </span></h4>
+                                <small>Sinu moosa</small>
+                                <p>
+                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                                </p>
+                                <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div> 
+                                </div>
+                              </li>
+                              <li>
+                              <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                              <span>22/7/14</span>
+                              </div>
+                              <div class="rht-algn">
+                                <h4>River rafting in kodai is awesome
+                                <span class="toltp-file">
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                                <i class="fa fa-file-text"></i>
+                                </a>
+                                </span></h4>
+                                <small>Sinu moosa</small>
+                                <p>
+                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                                </p>
+                                <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                                </div>
+                              </li>
+                              <li>
+                              <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                              <span>22/7/14</span>
+                              </div>
+                              <div class="rht-algn">
+                                <h4>River rafting in kodai is awesome
+                                <span class="toltp-file">
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                                <i class="fa fa-file-text"></i>
+                                </a>
+                                </span></h4>
+                                <small>Sinu moosa</small>
+                                <p>
+                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                                </p>
+                                <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                                </div>
+                              </li>
+                               <li>
+                              <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                              <span>22/7/14</span>
+                              </div>
+                              <div class="rht-algn">
+                                <h4>River rafting in kodai is awesome
+                                <span class="toltp-file">
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                                <i class="fa fa-file-text"></i>
+                                </a>
+                                </span></h4>
+                                <small>Sinu moosa</small>
+                                <p>
+                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                                </p>
+                                <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                                </div>
+                              </li>
+                            </ul>
+                            </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="login-page inPage">
+  <div class="container-fluid content-wrapper">
+    <div class="h100 bg-cover login-inner">
+      <img src="assets/images/login-bg.jpg" alt="" class="login-bg">
+      <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 h100 pd-0">
+        <a href="#" class="brand">site logo</a>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100 bg-light">
+        <div class="flex">
+          <div class="form-sec">
+            <form action="">
+              <input type="text" class="form-control" placeholder="Username">
+              <input type="text" class="form-control" placeholder="Password">
+
+              <div class="checkbox-login">
+                <input type="checkbox" id="myCheckbox" name="myCheckbox" value="myCheckbox" checked>
+                <label for="myCheckbox">Keep me signed in</label>
+              </div>
+              <button type="button" class="btn btn-danger text-uppercase signup-btn">Sign In</button>
+              <div class="sign-up-right">If you are a new User <a href="#">sign up</a> here </div>
+            </form>
+          </div>
+        </div>
+        <button type="button" class="btn btn-primary text-uppercase signin-btn-login">Sign In</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="assets/js/jquery-1.11.2.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+<script src="assets/js/scrollReveal.min.js"></script>
+<script src="assets/js/moment.min.js"></script>
+<script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+<script src="assets/js/Sortable.min.js"></script>
+
+<script src="assets/mediaelement/mediaelement-and-player.min.js"></script>
+
+<script src="assets/js/TimelineLite.min.js"></script>
+<script src="assets/js/TweenLite.min.js"></script>
+<script src="assets/js/CSSPlugin.min.js"></script>
+<script src="assets/js/EasePack.min.js"></script>
+
+<script src="assets/js/custom.js"></script>
+<script>
+  window.sr = new scrollReveal();
+  
+  $(function() {
+
+    $('.new-log .attach-icon').bind('click', function(e) {
+      e.preventDefault();
+      $(this).parent().siblings('.attach-list').show();
+      $(this).hide();
+    });
+
+    $('.new-log .edit-log-icon').bind('click', function(e) {
+      e.preventDefault();
+      $(this).parent().parent().parent().parent().hide().siblings('.log-details').show();
+    });
+
+    $('.new-log .list-unstyled li').each(function() {
+
+      $(this).find('.checkbox').find('input').click(function(e) {
+        var logPreview = $(this).parent().parent().siblings('.log-preview').attr('data-content');
+        if ($(this).is(':checked')) {
+          if (logPreview === "1") {
+            $(this).parent().parent().siblings('.log-preview').show();
+          } else if (logPreview === "0") {
+            $(this).parent().parent().siblings('.log-details').show();
+          }
+        } else {
+          $(this).parent().parent().siblings('.log-details').hide();
+          $(this).parent().parent().siblings('.log-preview').hide();
+        }
+      });
+
+      $(this).click(function(e) {
+        if ($(this).find('input').is(':checked')){
+          $(this).addClass('selected');
+          $(this).siblings('li').removeClass('selected');
+          $(this).siblings('li').find('.log-details').hide();
+          $(this).siblings('li').find('.log-preview').hide();
+        } else {
+          $(this).removeClass('selected');
+          $(this).siblings('li').removeClass('selected');
+          $(this).siblings('li').find('.log-details').hide();
+          $(this).siblings('li').find('.log-preview').hide();
+        }
+      });
+
+      $('.img-preview .close').click(function(e) {
+        e.preventDefault();
+        $(this).parent().remove();
+      });
+
+    });
+    
+    $('.new-log input[type="file"]').change(showPreviewImage_click);
+    
+    function showPreviewImage_click(e) {
+      var $input = $(this);
+      var inputFiles = this.files;
+      if(inputFiles == undefined || inputFiles.length == 0) return;
+      var inputFile = inputFiles[0];
+
+      var dataType = $(this).attr('data-type');
+      var previewTarget = $input.parent().parent().parent().parent().parent().find('.upload-preview');
+
+      var reader = new FileReader();
+      reader.onload = function(event) {
+        // $input.next().attr("src", event.target.result);
+        if (dataType === 'image') {
+          previewTarget.append('<div class="img-preview"><img src="'+event.target.result+'"><button type="button" class="close" aria-label="Close">&times;</button></div>');
+        } else if (dataType === 'video') {
+          previewTarget.append('<div class="img-preview"><video src="'+this.result+'"></video><button type="button" class="close" aria-label="Close">&times;</button></div>');
+        } else if (dataType === 'audio') {
+          previewTarget.append('<div class="img-preview"><audio src="'+this.result+'"></audio><button type="button" class="close" aria-label="Close">&times;</button></div>');
+        }
+        $('.img-preview .close').click(function(e) {
+          e.preventDefault();
+          $(this).parent().remove();
+        });
+      };
+      reader.onerror = function(event) {
+        alert("Upload Failed: " + event.target.error.code);
+      };
+      reader.readAsDataURL(inputFile);
+    }
+
+    $('.date-picker').datetimepicker({
+      format: 'DD/M/YYYY'
+    });
+
+    var pageHeight = $(window).outerHeight(),
+        headerHeight = $('header.navbar').outerHeight(),
+        trips2Header = $('#discussion-list .inform-text').height()+$('#discussion-list .trp-hd').height();
+
+    $(".new-log").css({'height': pageHeight - (headerHeight+trips2Header)});
+
+    $(".new-log").mCustomScrollbar({
+      theme:"dark-thin",
+      setTop: 100
+    });
+
+
+    // Parallax
+    crrntHt = $('#discussion-list .img-wrp').height();
+    sectionWidth = $('section#discussion-list').width();
+
+    $('#discussion-list .control-bar').css({'width': sectionWidth});
+    $('.new-log .list-unstyled').css({'margin-top': 40});
+
+    $('#discussion-list .discussion').css({'padding-top': crrntHt+47});
+    $('#discussion-list .fixed-ch').css({'height': crrntHt+55, 'width': sectionWidth});
+
+    $('#discussion-list .sec-chat').css({'width': sectionWidth});
+    setTimeout(function(){ 
+      $('#discussion-list .fixed-ch').css({'height': crrntHt+55, 'width': sectionWidth, 'top': 47});
+    }, 800);
+
+    $("#discussion-list").mCustomScrollbar({
+      theme:"dark-thin",
+      callbacks:{
+        whileScrolling:function(){ 
+          valScrlAnmLogs(this.mcs.topPct);
+        },
+        alwaysTriggerOffsets:false,
+        onScroll: function() {
+          if($(this).data("mCS").trigger==="external"){
+            TweenLite.to(".discussion .logs-tab", 0, {css: {opacity: "0", display: "none"}});
+            TweenLite.to(".discussion .new-log", 1, {css: {opacity: "1", display: "block"}});
+            $("#discussion-list").mCustomScrollbar("disable", true);
+            $('#discussion-list .fixed-ch').css({'height': ''});
+            $('#discussion-list .img-wrp').css({'height': ''});
+            $('.discussion').css({'padding-top': 84});
+            $('#discussion-list .nav-tabs').addClass('tab-disabled');
+            $('.media-lg').mediaelementplayer({
+              features: ['playpause','progress','volume'],
+              videoWidth: 320,
+              videoHeight: 180,
+              audioWidth: 260,
+              audioHeight: 30
+            });
+            $('.media-xs').mediaelementplayer({
+              features: [],
+              videoWidth: 80,
+              videoHeight: 60,
+              audioWidth: 80,
+              audioHeight: 60
+            });
+          } else{
+            //last scrolling event was triggered by the user
+          }
+        }
+      }
+    });
+
+
+    $('#save-log, #cancel-log').bind('click', function(e) {
+      TweenLite.to("#discussion-list .logs-tab", 1, {css: {opacity: "1", display: "block"}});
+      TweenLite.to("#discussion-list .new-log", 0.1, {css: {opacity: "0", display: "none"}});
+
+      $("#discussion-list").mCustomScrollbar("update");
+
+      $('.discussion').css({'padding-top':crrntHt+47});
+      $('#discussion-list .img-wrp').css({'height': crrntHt, 'background-position-y': ''});
+      $('#discussion-list .fixed-ch').css({'height': crrntHt+55, 'width': sectionWidth});
+
+      $('#discussion-list .nav-tabs').removeClass('tab-disabled');
+    });
+
+    function valScrlAnmLogs(recevedVl) {
+      $('#discussion-list .fixed-ch').css({'height': crrntHt - ((recevedVl/80)*crrntHt)+55, 'min-height': 84});
+      $('#discussion-list .img-wrp').css({'height': crrntHt - ((recevedVl/80)*crrntHt), 'min-height': 43, 'background-position-y': 0 - recevedVl});
+    }
+
+    $('#add-new-log').bind('click', function(e) {
+      e.preventDefault();
+      $("#discussion-list").mCustomScrollbar("scrollTo","bottom", {callbacks: true});
+    });
+
+    var list = document.getElementById("sortable-list");
+    Sortable.create(list);
+
+  });
+
+</script>
+</body>
+</html>

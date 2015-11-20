@@ -1,0 +1,295 @@
+html, body {
+	font-family: 'Merriweather', serif;
+	font-weight: 400;
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'Oswald';
+}
+.google-map {
+	position: fixed;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+}
+
+.page {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+}
+
+.content-wrapper {
+	position: absolute;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	padding-top: 47px;
+}
+
+.h100 {
+	height: 100%;
+	position: relative;
+}
+
+.text15 {
+	font-size: 15px;
+}
+
+.z0 {
+	z-index: 0;
+}
+
+.z1 {
+	z-index: 1;
+}
+
+.z2 {
+	z-index: 2;
+}
+
+.z10 {
+	z-index: 10;
+}
+
+.z15 {
+	z-index: 15;
+}
+
+.z20 {
+	z-index: 20;
+}
+
+.z25 {
+	z-index: 25;
+}
+
+.z30 {
+	z-index: 30;
+}
+
+.z35 {
+	z-index: 35;
+}
+
+.z45 {
+	z-index: 45;
+}
+
+.z50 {
+	z-index: 50;
+}
+
+.z55 {
+	z-index: 55;
+}
+
+.z60 {
+	z-index: 60;
+}
+
+.offset-T1 {
+	padding-top: 1rem;
+}
+
+.offset-T2 {
+	padding-top: 2rem;
+}
+
+.offset-T50p {
+	padding-top: 50px;
+}
+
+
+.offset-L1 {
+	padding-left: 1rem;
+}
+
+.offset-R1 {
+	padding-right: 1rem;
+}
+
+.offset-L-5 {
+	padding-left: 0.5rem;
+}
+
+.offset-LR1-5 {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.rm-offset {
+	padding: 0;
+}
+
+.rm-r-offset {
+	padding-right: 0;
+}
+
+.offset-T-5 {
+	padding-top: 0.5rem;
+}
+
+.offset-LR10-0 {
+	padding-left: 10px;
+	padding-right: 0;
+}
+
+// Global bootstrap overrides
+
+.btn-primary, .btn-default {
+	@include border-radius(0);
+	padding: 0.5rem 1rem;
+	line-height: 1.2;
+	font-family: 'Oswald';
+	font-weight: normal;
+	text-transform: uppercase;
+	margin-right: 0.5rem;
+	float: left;
+	font-size: 1.25rem;
+	&:last-of-type {
+		margin-right: 0;
+	}
+	&:hover, &:focus, &:active {
+		outline: none;
+		@include box-shadow(none);
+		&:focus {
+			outline: none;
+		}
+	}
+}
+
+.btn-default {
+	border-color: $primary-color;
+	color: $primary-color;
+}
+
+.btn-primary {
+	background-color: $primary-color;
+	color: white;
+	&:hover, &:active, &:focus {
+		background-color: $primary-dark;
+	}
+}
+
+.box-shadow-min {
+	box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.32);
+}
+
+
+.text-normal {
+	text-transform: none;
+}
+
+.default-shadow {
+	@include box-shadow(0px 2px 5px rgba(0, 0, 0, 0.41));
+}
+
+.shadow-left {
+	@include box-shadow(-3px 0 3px rgba(0,0,0,0.15));
+}
+
+.flex {
+	@include display-flex;
+	@include align-items(center);
+	@include justify-content(center);
+	width: 100%;
+	height: 100%;
+	.aligner {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+.text-white {
+	color: white;
+}
+
+.text-mute {
+	color: $dark-gray1 !important;
+}
+
+.primary-bg {
+	background-color: $primary-color !important;
+}
+
+.mCSB_inside > .mCSB_container {
+	margin-right: 0 !important;
+}
+
+.mCSB_scrollTools {
+	width: 10px !important;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail {
+	width: 0 !important;
+}
+
+.mCSB_scrollTools {
+	z-index: 999;
+	margin: 10px 0;
+}
+
+.shadow-b {
+	@include box-shadow(0px 1px 4px rgba(0, 0, 0, 0.15));
+}
+
+.listings-tab {
+	width: 95%;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 !important;
+	.panel {
+		margin: 0 !important;
+	}
+	.panel-default:last-of-type {
+		border-bottom: none;
+		margin-bottom: 3px !important;
+	}
+}
+.gallery-tab {
+	width: 98%;
+	margin-bottom: -1rem;
+	overflow: hidden;
+}
+.tab-content {
+	padding-top: 1rem;
+}
+
+.ofw-hid {
+	overflow: hidden;
+}
+
+.expand-btn {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	background-color: #fff;
+	z-index: 99;
+	left: -15px;
+	top: 50%;
+	margin-top: -15px;
+	text-align: center;
+	line-height: 30px;
+	@include border-radius(50%);
+	@include box-shadow(0 0 6px rgba(0, 0, 0, 0.15));
+	cursor: pointer;
+}
+
+.form-control {
+	&:focus, &:active, &:visited {
+		@include box-shadow(none);
+		outline: none;
+		border-color: inherit;
+	}
+}
+
+.tab-disabled{
+    pointer-events: none;
+}

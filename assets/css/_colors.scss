@@ -1,0 +1,30 @@
+$primary-color: #2b6c96;
+$primary-dark: #215272;
+
+$secondary-color: #C52828;
+$secondary-dark: #B72323;
+$secondary-bright: #c62828;
+$secondary-fade: #d87270;
+$blue-bright: #01aded;
+
+$light-gray: #797979;
+$dark-gray: #464646;
+$dark-gray1: #737371;
+$dark-gray2: #313131;
+$white: white;
+$black: black;
+$grey-bg: material-color('grey', '100');
+$grey-bg-light: material-color('grey', '100');
+$header-bg: white;
+
+$text-color: material-color('grey', '600');
+$text-grey-light: material-color('grey', '500');
+
+.bg-white {
+	background-color: white;
+}
+
+.bg-grey {
+	background-color: $grey-bg;
+}
+

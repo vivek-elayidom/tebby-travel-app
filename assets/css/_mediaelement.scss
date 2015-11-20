@@ -1,0 +1,44 @@
+.mejs-video {
+  margin: auto;
+}
+.mejs-controls {
+  background: #333 !important;
+  .mejs-time-rail {
+    .mejs-time-total {
+      @include border-radius(0 !important);
+      height: 6px !important;
+      margin: 8px 5px !important;
+    }
+    .mejs-time-buffering {
+      @include border-radius(0 !important);
+      background: $secondary-color !important;
+      height: 6px !important;
+    }
+    .mejs-time-loaded {
+      @include border-radius(0 !important);
+      background: $secondary-fade !important;
+      height: 6px !important;
+    }
+    .mejs-time-current {
+      @include border-radius(0 !important);
+      background: $secondary-dark !important;
+      height: 6px !important;
+    }
+  }
+}
+.media-xs {
+  .mejs-controls {
+    display: none !important;
+  }
+  .mejs-overlay-button {
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+    @include background-size(cover);
+  }
+  .mejs-overlay:hover{
+    .mejs-overlay-button{
+      background-position: 0 -30px;
+    }
+  }
+}

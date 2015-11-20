@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel App</title>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="assets/css/travel-app.css">
+  <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css">
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.js"></script>
+        <script src="assets/js/respond.js"></script>
+        <![endif]-->
+      </head>
+      <body>
+        <div class="google-map z0"></div>
+        <div class="page">
+          <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+            <div class="container">
+              <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">Logo</a>
+              </div>
+              <nav id="bs-navbar" class="collapse navbar-collapse">
+
+                <ul class="nav navbar-nav navbar-right">
+                  <li><a href="#">Trips</a></li>
+                  <li><a href="#">Bucket list</a></li>
+                  <li><a href="#">My account</a></li>
+                  <li class="filled signed-in"><a href="#"><img src="assets/images/signed-in.jpg" alt=""></a></li>
+                </ul>
+              </nav>
+            </div>
+          </header>
+          <div class="container-fluid content-wrapper">
+            <div class="h100">
+            <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100">
+        <!-- Empty Transparent Column - Google Map Seethrough -->
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100">
+        <!-- Empty Transparent Column - Google Map Seethrough -->
+      </div>
+
+              <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100 box-shadow-min bg-white rm-offset" data-sr="enter right scale 0%, move 100%, wait .2s">
+      
+                <section class="section-listing h100" id="listing">
+
+<div class="fixed-ch">
+                  <div class="img-wrp">
+                  <a href="#" class="share-btn">Share</a>
+                    <img src="assets/images/listing1_2.jpg" alt="">
+                    <h2><i class="fa fa-bicycle"></i><span>Para-Sailing</span>
+                      <div class="dropdown setting-sml">
+                        <i class="dropdown-toggle fa fa-cog" type="button" data-toggle="dropdown" >
+                        </i>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                          <li><a href="#">Edit</a></li>
+                        </ul>
+                      </div>
+                      <div class="rating-check">
+                        <i class="fa fa-heart-o"></i>
+                        <i class="fa fa-check"></i>
+                      </div>
+                      
+                      <small>Rishikesh, Utterkhand</small>
+
+                    </h2>                   
+                    </div>
+
+
+                    <div role="tabpanel" class="overlay-tab-hd">
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                          <a href="#discussionTab" aria-controls="discussionTab" role="tab" data-toggle="tab">Quick&nbsp;Info</a>
+                        </li>
+                        <!-- <li role="presentation">
+                          <a href="#itineraryTab" aria-controls="itineraryTab" role="tab" data-toggle="tab">Itinerary</a>
+                        </li>
+                        <li role="presentation">
+                          <a href="#staysTab" aria-controls="staysTab" role="tab" data-toggle="tab">Stays</a>
+                        </li>
+                        <li role="presentation">
+                          <a href="#gearTab" aria-controls="gearTab" role="tab" data-toggle="tab">Gear</a>
+                        </li>
+                        <li role="presentation">
+                          <a href="#pricingTab" aria-controls="pricingTab" role="tab" data-toggle="tab">Pricing</a>
+                        </li> -->
+                      </ul>
+                    </div>
+                   
+
+                    <div class="after-arrng">
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                      <div role="tabpanel" class="tab-pane active" id="discussionTab">
+                        <div class="listing-icons">
+                          <a href="#"><i class="fa fa-rupee"></i><span>2400/person</span></a>
+                          <a href="#"><i class="fa fa-hourglass-half"></i><span>1h 30m</span></a>
+                          <a href="#"><i class="fa fa-users"></i><span>1 person</span></a>
+                          <a href="#"><i class="fa fa-flash"></i><span>Intermediate</span></a>
+                        </div>
+                        </div>
+                        <!-- <div role="tabpanel" class="tab-pane" id="itineraryTab">Itinerary</div>
+                      <div role="tabpanel" class="tab-pane" id="staysTab">Stays</div>
+                      <div role="tabpanel" class="tab-pane" id="gearTab">Gear</div>
+                      <div role="tabpanel" class="tab-pane" id="pricingTab">Pricing</div> -->
+                    </div>
+                        
+                        <div class="sml-tags">
+                          <ul>
+                            <li>
+                            <a href="#">Rafing</a>
+                            <a href="#">Air</a>
+                            <a href="#">Rafting</a>
+                            </li>
+                            <li>
+                            <a href="#">Adventure</a>
+                            <a href="#">Water</a>
+                            <a href="#">River</a>
+                            </li>
+
+                          </ul>
+                        </div>
+                        </div>
+                        
+                      
+        <div role="tabpanel" class="secndryTabs">
+                      <!-- Nav tabs -->
+                      <ul class="nav nav-tabs nav-justified" role="tablist">
+                        <li role="presentation" class="active">
+                          <a href="#logsTab" aria-controls="logsTab" role="tab" data-toggle="tab">Logs</a>
+                        </li>
+                        
+                        <li role="presentation">
+                          <a href="#savedTab" aria-controls="savedTab" role="tab" data-toggle="tab">Saved</a>
+                        </li>
+                        
+                        <li role="presentation">
+                          <a href="#mylogsTab" aria-controls="mylogsTab" role="tab" data-toggle="tab">My Logs</a>
+                        </li>
+                      </ul>
+                    
+                     </div>
+                     </div>
+                      
+
+              <div class="tab-content mrgin-top-secdry1">
+                      <div role="tabpanel" class="tab-pane active" id="logsTab">
+                          <ul class="log-view-listing">
+                            <li>
+                            <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                            <span>22/7/14</span>
+                            </div>
+                            <div class="rht-algn">
+                              <h4>River rafting in kodai is awesome
+
+                              <span class="toltp-file">
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                              </a>
+                              </span></h4>
+                              <small>Sinu moosa</small>
+                              <p>
+                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                              </p>
+                              <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                              
+                              <button type="button" class="btn btn-default">Save Log</button>
+                              </div>
+                            </li>
+
+                            <li>
+                            <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                            <span>22/7/14</span>
+                            </div>
+                            <div class="rht-algn">
+                              <h4>River rafting in kodai is awesome
+
+                              <span class="toltp-file">
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                              </a>
+                              </span></h4>
+                              <small>Sinu moosa</small>
+                              <p>
+                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                              </p>
+                              <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                              
+                              <button type="button" class="btn btn-default">Save Log</button>
+                              </div>
+                            </li>
+
+                            <li>
+                            <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                            <span>22/7/14</span>
+                            </div>
+                            <div class="rht-algn">
+                              <h4>River rafting in kodai is awesome
+
+                              <span class="toltp-file">
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                              </a>
+                              </span></h4>
+                              <small>Sinu moosa</small>
+                              <p>
+                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                              </p>
+                              <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                              
+                              <button type="button" class="btn btn-default">Save Log</button>
+                              </div>
+                            </li>
+                            <li>
+                            <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                            <span>22/7/14</span>
+                            </div>
+                            <div class="rht-algn">
+                              <h4>River rafting in kodai is awesome
+
+                              <span class="toltp-file">
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                              </a>
+                              </span></h4>
+                              <small>Sinu moosa</small>
+                              <p>
+                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                              </p>
+                              <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                              
+                              <button type="button" class="btn btn-default">Save Log</button>
+                              </div>
+                            </li>
+                            <li>
+                            <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                            <span>22/7/14</span>
+                            </div>
+                            <div class="rht-algn">
+                              <h4>River rafting in kodai is awesome
+
+                              <span class="toltp-file">
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                              </a>
+                              </span></h4>
+                              <small>Sinu moosa</small>
+                              <p>
+                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                              </p>
+                              <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                              
+                              <button type="button" class="btn btn-default">Save Log</button>
+                              </div>
+                            </li>
+                            <li>
+                            <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                            <span>22/7/14</span>
+                            </div>
+                            <div class="rht-algn">
+                              <h4>River rafting in kodai is awesome
+
+                              <span class="toltp-file">
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                              </a>
+                              </span></h4>
+                              <small>Sinu moosa</small>
+                              <p>
+                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                              </p>
+                              <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                              
+                              <button type="button" class="btn btn-default">Save Log</button>
+                              </div>
+                            </li>
+
+                             <li>
+                            <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                            <span>22/7/14</span>
+                            </div>
+                            <div class="rht-algn">
+                              <h4>River rafting in kodai is awesome
+
+                              <span class="toltp-file">
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                              </a>
+                              </span></h4>
+                              <small>Sinu moosa</small>
+                              <p>
+                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                              </p>
+                              <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                              
+                              <button type="button" class="btn btn-default">Save Log</button>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                      <div role="tabpanel" class="tab-pane" id="savedTab">Saved</div>
+                      <div role="tabpanel" class="tab-pane" id="mylogsTab">My Logs</div>
+                    </div>
+                     
+                  
+                </section>
+                </div>
+              </div>
+            
+          </div>
+        </div>
+        
+        <script src="assets/js/jquery-1.11.2.min.js"></script>
+        <script src="assets/js/bootstrap.js"></script>
+        <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/js/scrollReveal.min.js"></script>
+        <script src="assets/js/custom.js"></script>
+        <script>
+          window.sr = new scrollReveal();
+          $(function() {
+
+            $("#listing").mCustomScrollbar({
+              scrollButtons:{enable:false},
+              theme:"dark-thin",
+              callbacks:{
+                whileScrolling:function(){ 
+                  valScrlAnm(this.mcs.topPct);
+                },
+                alwaysTriggerOffsets:false
+              }
+            });
+            
+
+    // Parallax
+    sectionWidth = $('section.section-listing').width();
+    $('.sec-chat').css({'width': sectionWidth-55});
+
+    tpTabHt = $('.after-arrng').height();
+    crrntHt = $('.img-wrp').height();
+    totalHt = tpTabHt + crrntHt;
+    secndryTabsHt = $('.img-wrp').height() + $('.after-arrng').height();
+    smltagsHt = $('.sml-tags').height();
+
+    $('.mrgin-top-secdry1').css({'margin-top': totalHt+50});
+
+      setTimeout(function(){ 
+        $('.fixed-ch').css({'height': totalHt+30, 'width': sectionWidth, 'top': 47});
+        $('.secndryTabs').css({'top':0 ,'padding-top': secndryTabsHt+46,'width':sectionWidth , 'position': 'fixed'});
+      }, 800);
+
+      function valScrlAnm(recevedVl) {
+        $('.fixed-ch').css({'height': totalHt - ((recevedVl/80)*totalHt)+30, 'min-height': secndryTabsHt});
+        $('.img-wrp').css({'height': crrntHt - ((recevedVl/80)*crrntHt), 'min-height': 100, 'background-position-y':  0 - recevedVl});
+  
+          secndryTabsHt = $('.img-wrp').height() + $('.after-arrng').height();
+          
+         $('.secndryTabs').css({'padding-top': secndryTabsHt+46, 'bottom': 0, 'height': 38, 'min-height': secndryTabsHt});
+       
+        if (recevedVl<15){
+          $('.sml-tags').css({'height': smltagsHt, 'margin-top':13});
+        }
+        else {
+          $('.sml-tags').css({'height': 0, 'margin-top':3});
+        }
+
+        if (recevedVl<20){
+          $('.share-btn').fadeIn('fast');
+        }
+        else {          
+          $('.share-btn').fadeOut('fast');
+        }    
+      }
+
+      //resetParallax
+      $('.secndryTabs .nav-tabs li a').click(function() {
+      $('.mrgin-top-secdry1').css({'margin-top': totalHt+50});
+      $('.img-wrp').css({'background-position-y': 0, 'height': crrntHt});
+      $('.fixed-ch').css({'height': totalHt+30, 'width': sectionWidth, 'top': 47});
+      $('.secndryTabs').css({'top':0 ,'padding-top': totalHt+46,'width':sectionWidth , 'position': 'fixed'});
+      $('.sml-tags').css({'height': smltagsHt, 'margin-top':13});
+      $('.share-btn').fadeIn(0);
+      });
+      
+  });
+  </script>
+
+</body>
+</html>

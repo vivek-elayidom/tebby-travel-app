@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel App</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="assets/css/travel-app.css">
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.js"></script>
+        <script src="assets/js/respond.js"></script>
+    <![endif]-->
+    <style>
+      [data-sr] {
+        visibility: hidden;
+      }
+    </style>
+</head>
+<body>
+  <div class="google-map z0"></div>
+  <div class="page">
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">Logo</a>
+        </div>
+        <nav id="bs-navbar" class="collapse navbar-collapse">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Trips</a></li>
+            <li><a href="#">Bucket list</a></li>
+            <li><a href="#">My account</a></li>
+            <li class="filled"><a href="#">Sign in</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container-fluid content-wrapper">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100">
+        <!-- Empty Transparent Column - Google Map Seethrough -->
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100 bg-grey rm-offset shadow-left" data-sr="enter right scale 0%, move 100%, wait 0.5s">
+        <section class="discussion h100">
+          <div class="fixed-ch">
+            <div class="img-wrp">
+              <img src="assets/images/kashmir.jpg" alt="" >
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 offset-T1">
+                <div class="pull-right offset-L1 brgr-bttn"><i class="fa fa-navicon text-white"></i></div>
+              </div>
+              <div class="inform-text"><i class="fa fa-eye-slash"></i>Visit to Nainital Mussoorie and Dehradun</div>
+            </div>
+
+            <ul class="nav nav-tabs nav-justified" role="tablist">
+              <li role="presentation" class="active">
+                <a href="#discussion" aria-controls="discussion" role="tab" data-toggle="tab">Discussion</a>
+              </li>
+              <li role="presentation">
+                <a href="#listings" aria-controls="listings" role="tab" data-toggle="tab">Listings</a>
+              </li>
+              <li role="presentation">
+                <a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Gallery</a>
+              </li>
+              <li role="presentation">
+                <a href="#logs" aria-controls="logs" role="tab" data-toggle="tab">Logs</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="tab-body">
+            <div class="tab-content h100">
+                        <div role="tabpanel" class="tab-pane h100 active" id="discussion">
+                          <div class="discussion-Tab">
+                            <div class="panel panel-default left">
+                              <div class="panel-heading">
+                                <div class="pull-left"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt=""></div>
+                                <div class="pull-left">Madhusoodanan Nair</div>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                                    <i class="fa fa-bed fa-lg"></i>
+                                  </div>
+                                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h5>Movenpick Hotel &amp; Spa</h5>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        5-star hotel
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                        Rs.6686 per night
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>Address: </p>
+                                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                                        <p>Phone: 080 4300 1000</p>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pull-left">
+                                          <div class="offset-T-5">
+                                            <button type="button" class="btn btn-default">Share</button>
+                                            <button type="button" class="btn btn-primary">View</button>
+                                            <div class="clearfix"></div>
+                                          </div>
+                                        </div>
+                                        <div class="pull-right date-time">
+                                          <small class="text-muted text-right">
+                                            12:56PM, Thursday, 17 September 2015
+                                          </small>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default right">
+                              <div class="panel-heading">
+                                <div class="pull-right"><img src="assets/images/avatar/avatar2.jpg" class="img-circle" alt=""></div>
+                                <div class="pull-right">Vyloppilli Sreedhara Menon</div>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                                    <i class="fa fa-bed fa-lg"></i>
+                                  </div>
+                                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h5>Movenpick Hotel &amp; Spa</h5>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        5-star hotel
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                        Rs.6686 per night
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>Address: </p>
+                                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                                        <p>Phone: 080 4300 1000</p>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pull-right">
+                                          <div class="offset-T-5">
+                                            <button type="button" class="btn btn-default">Share</button>
+                                            <button type="button" class="btn btn-primary">View</button>
+                                            <div class="clearfix"></div>
+                                          </div>
+                                        </div>
+                                        <div class="pull-left date-time">
+                                          <small class="text-muted text-right">
+                                            12:56PM, Thursday, 17 September 2015
+                                          </small>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default left">
+                              <div class="panel-heading">
+                                <div class="pull-left"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt=""></div>
+                                <div class="pull-left">Madhusoodanan Nair</div>
+                                <div class="clearfix"></div>
+                              </div>
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quam quas consequatur veniam vel aut ullam. Obcaecati quidem, cum magnam culpa ad mollitia, atque similique minima incidunt quod dolore a!</p>
+                                  </div>
+                                </div>
+                                <div class="row">
+                                  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                    <div class="pull-right date-time">
+                                      <small class="text-muted text-right">
+                                        12:56PM, Thursday, 17 September 2015
+                                      </small>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="sec-chat">
+                            <div class="input-group">
+                              <input type="text" class="form-control">
+                              <span class="input-group-btn">
+                                <button class="btn btn-secondary" type="button"><i class="fa fa-paper-plane"></i></button>
+                                <button class="btn btn-secondary" type="button"><i class="fa fa-paperclip"></i></button>
+                              </span>
+                            </div>
+                          </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane h100" id="listings">
+
+                          <div class="listings-tab">
+                            <div class="panel panel-default">
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                                    <i class="fa fa-bed fa-lg"></i>
+                                  </div>
+                                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h5>Movenpick Hotel &amp; Spa</h5>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        5-star hotel
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                        Rs.6686 per night
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>Address: </p>
+                                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                                        <p>Phone: 080 4300 1000</p>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pull-right">
+                                          <div class="offset-T-5">
+                                            <button type="button" class="btn btn-default">Share</button>
+                                            <button type="button" class="btn btn-primary">View</button>
+                                            <div class="clearfix"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                                    <i class="fa fa-bed fa-lg"></i>
+                                  </div>
+                                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h5>Movenpick Hotel &amp; Spa</h5>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        5-star hotel
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                        Rs.6686 per night
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>Address: </p>
+                                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                                        <p>Phone: 080 4300 1000</p>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pull-right">
+                                          <div class="offset-T-5">
+                                            <button type="button" class="btn btn-default">Share</button>
+                                            <button type="button" class="btn btn-primary">View</button>
+                                            <div class="clearfix"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                                    <i class="fa fa-bed fa-lg"></i>
+                                  </div>
+                                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h5>Movenpick Hotel &amp; Spa</h5>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        5-star hotel
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                        Rs.6686 per night
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>Address: </p>
+                                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                                        <p>Phone: 080 4300 1000</p>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pull-right">
+                                          <div class="offset-T-5">
+                                            <button type="button" class="btn btn-default">Share</button>
+                                            <button type="button" class="btn btn-primary">View</button>
+                                            <div class="clearfix"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="panel panel-default">
+                              <div class="panel-body">
+                                <div class="row">
+                                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                                    <i class="fa fa-bed fa-lg"></i>
+                                  </div>
+                                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                                    <div class="row">
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <h5>Movenpick Hotel &amp; Spa</h5>
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                        5-star hotel
+                                      </div>
+                                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                                        Rs.6686 per night
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <p>Address: </p>
+                                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                                        <p>Phone: 080 4300 1000</p>
+                                      </div>
+                                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                                        <div class="pull-right">
+                                          <div class="offset-T-5">
+                                            <button type="button" class="btn btn-default">Share</button>
+                                            <button type="button" class="btn btn-primary">View</button>
+                                            <div class="clearfix"></div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane h100" id="gallery">
+                          <div class="gallery-tab">
+                          <div class="photo-grid">
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/sea.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/agra.JPG" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/china.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/hampi.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item two-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/houseboat.JPG" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/kathakali.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/korea.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/ladakh.JPG" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item two-two">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/lighthouse.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/ny.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/paris.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/hill.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/taj.jpg" alt="">
+                              </div>
+                            </div>
+                            <div class="grid-item one-three">
+                              <div class="img-hldr">
+                                <img src="assets/images/feed/kashmir.jpg" alt="">
+                              </div>
+                            </div>
+                          </div>
+                          </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane h100" id="logs">Logs</div>
+                        <div class="logs-tab">
+
+                        </div>
+                      </div>
+          </div>
+        </section>
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100 bg-white rm-offset shadow-left" data-sr="enter right scale 0%, move 100%">
+        <section class="feed h100" id="gallery-feed">
+          <!-- <ul class="nav nav-tabs nav-justified" role="tablist">
+            <li role="presentation">
+              <a href="#global-feed" aria-controls="global-feed" role="tab" data-toggle="tab">Global Feed</a>
+            </li>
+            <li role="presentation" class="active">
+              <a href="#featured-feed" aria-controls="featured-feed" role="tab" data-toggle="tab">Featured Feed</a>
+            </li>
+          </ul> -->
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 h100 rm-offset">
+            <div class="photo-grid">
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/sea.jpg" alt="">
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/agra.JPG" alt="">
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/china.jpg" alt="">
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/hampi.jpg" alt="">
+                </div>
+              </div>
+              <div class="grid-item two-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/houseboat.JPG" alt="">
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/kathakali.jpg" alt="">
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/korea.jpg" alt="">
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/ladakh.JPG" alt="">
+                </div>
+              </div>
+              <div class="grid-item two-two">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/lighthouse.jpg" alt="">
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/ny.jpg" alt="">
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/paris.jpg" alt="">
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/hill.jpg" alt="">
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/taj.jpg" alt="">
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/kashmir.jpg" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <div class="login-page inPage">
+    <div class="container-fluid content-wrapper">
+      <div class="h100 bg-cover login-inner">
+        <img src="assets/images/login-bg.jpg" alt="" class="login-bg">
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 h100 pd-0">
+          <a href="#" class="brand">site logo</a>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100 bg-light">
+          <div class="flex">
+            <div class="form-sec">
+              <form action="">
+                <input type="text" class="form-control" placeholder="Username">
+                <input type="text" class="form-control" placeholder="Password">
+                <div class="checkbox-login">
+                  <input type="checkbox" id="myCheckbox" name="myCheckbox" value="myCheckbox" checked>
+                  <label for="myCheckbox">Keep me signed in</label>
+                </div>
+                <button type="button" class="btn btn-danger text-uppercase signup-btn">Sign In</button>
+                <div class="sign-up-right">If you are a new User <a href="#">sign up</a> here </div>
+              </form>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary text-uppercase signin-btn-login">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    
+    <script src="assets/js/jquery-1.11.2.min.js"></script>
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="assets/js/scrollReveal.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      $(function() {
+        // var pageHeight = $(window).outerHeight(),
+            // headerHeight = $('header.navbar').outerHeight();
+            // feedNavTabHeight = $('.feed .nav-tabs').outerHeight();
+        // $('.feed .tab-content').height(pageHeight-(headerHeight+feedNavTabHeight));
+
+        function photoGrid() {
+          $('#gallery-feed .grid-item').each(function() {
+            var gridHeight = $('#gallery-feed .one-three').width();
+            $('#gallery-feed .one-three').height(gridHeight);
+            $('#gallery-feed .two-three').height(gridHeight);
+            $('#gallery-feed .two-two').height((gridHeight*2)+10);
+          });
+          $('#gallery-feed .img-hldr').each(function () {
+            if ($(this).find('img').length){
+              var getImage = $(this).find('img').attr('src');
+              $(this).css({"background-image":"url("+getImage+")"});
+              $(this).find('img').hide();
+            }
+          });
+        }
+
+        photoGrid();
+
+        $(window).resize(function() {
+          photoGrid();
+        });
+
+
+        $(".discussion").mCustomScrollbar({
+          theme:"dark-thin",
+          callbacks:{
+            whileScrolling:function(){ 
+              valScrlAnm(this.mcs.topPct);
+            },
+            alwaysTriggerOffsets:false
+          }
+        });
+
+        $(".photo-grid").mCustomScrollbar({
+          theme:"dark-thin"
+        });
+
+        chatHolder = $('.sec-chat').outerHeight();
+        $('.discussion').css({'padding-bottom': chatHolder});
+
+        // Parallax
+        crrntHt = $('.img-wrp').height();
+        sectionWidth = $('section.discussion').width();
+
+        $('.tab-body').css({'padding-top': crrntHt+32});
+        $('.fixed-ch').css({'height': crrntHt+38, 'width': sectionWidth});
+
+        $('.sec-chat').css({'width': sectionWidth});
+
+        setTimeout(function(){ 
+          $('.fixed-ch').css({'height': crrntHt+38, 'width': sectionWidth});
+        }, 800);
+
+        function valScrlAnm(recevedVl) {
+          $('.fixed-ch').css({'height': crrntHt - ((recevedVl/80)*crrntHt)+38, 'min-height': 140, 'top': 47});
+          $('.img-wrp').css({'height': crrntHt - ((recevedVl/80)*crrntHt), 'min-height': 43, 'background-position-y': 0 - recevedVl});
+        }
+
+        var initPadd = $('.discussion .tab-body').css('padding-top'),
+        initImgHeight = $('.discussion .img-wrp').css('height'),
+        initStickyHeight = $('.discussion .fixed-ch').css('height'),
+        initBgPosition = $('.discussion .img-wrp').css('background-position-y');
+
+        function resetParallax() {
+          $('.discussion .tab-body').css({'padding-top':initPadd});
+          $('.discussion .img-wrp').css({'height': initImgHeight});
+          $('.discussion .fixed-ch').css({'height': initStickyHeight});
+          $('.discussion .img-wrp').css({'background-position-y': initBgPosition})
+        }
+
+        $('.discussion .nav-tabs a').click(function(e) {
+          resetParallax();
+        });
+
+
+      });
+      window.sr = new scrollReveal();
+    </script>
+</body>
+</html>

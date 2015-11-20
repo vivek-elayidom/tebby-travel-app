@@ -1,0 +1,2784 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Travel App</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/travel-app.css">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.css">
+    <link rel="stylesheet" href="assets/mediaelement/mediaelementplayer.css">
+    <!--[if lt IE 9]>
+        <script src="assets/js/html5shiv.js"></script>
+        <script src="assets/js/respond.js"></script>
+    <![endif]-->
+</head>
+<body>
+  <div class="google-map z0"></div>
+  <div class="page">
+    <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand">Logo</a>
+        </div>
+        <nav id="bs-navbar" class="collapse navbar-collapse">
+
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="trips1.html">Trips</a></li>
+            <li><a href="bucketlist.html" id="bl-btn">Bucket list</a></li>
+            <li><a href="profile.html">My account</a></li>
+            <li class="filled"><a href="#">Sign in</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div class="container-fluid content-wrapper">
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100 rm-offset">
+
+      </div>
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100 rm-offset">
+        <!-- Discussion List Section Start -->
+        <section class="discussion h100 box-shadow-min bg-grey z10" id="discussion-list">
+          <div class="fixed-ch">
+            <div class="img-wrp">
+              <img src="assets/images/kashmir.jpg" alt="" >
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 offset-T1">
+                <div class="pull-right offset-L1 brgr-bttn"><i class="fa fa-navicon text-white"></i></div>
+              </div>
+              <div class="inform-text">
+                <i class="fa fa-info-circle"></i>
+                <span>Visit to Nainital Mussoorie and Dehradun</span>
+              </div>
+            </div>
+            <div class="page-header bg-white trp-hd">
+              <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#discussion" aria-controls="discussion" role="tab" data-toggle="tab">Discussion</a>
+                </li>
+                <li role="presentation">
+                  <a href="#listings" aria-controls="listings" role="tab" data-toggle="tab">Listings</a>
+                </li>
+                <li role="presentation">
+                  <a href="#gallery" aria-controls="gallery" role="tab" data-toggle="tab">Gallery</a>
+                </li>
+                <li role="presentation">
+                  <a href="#logs" aria-controls="logs" role="tab" data-toggle="tab">Logs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="tab-body">
+            <div class="tab-content h100">
+              <div role="tabpanel" class="tab-pane h100 active" id="discussion">
+                <div class="discussion-Tab">
+                  <div class="panel panel-default left">
+                    <div class="panel-heading">
+                      <div class="pull-left"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt=""></div>
+                      <div class="pull-left">Madhusoodanan Nair</div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                          <i class="fa fa-bed fa-lg"></i>
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <h5>Movenpick Hotel &amp; Spa</h5>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              5-star hotel
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                              Rs.6686 per night
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <p>Address: </p>
+                              <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                              <p>Phone: 080 4300 1000</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <div class="pull-left">
+                                <div class="offset-T-5">
+                                  <button type="button" class="btn btn-default btn-share">Share</button>
+                                  <button type="button" class="btn btn-primary btn-view">View</button>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                              <div class="pull-right date-time">
+                                <small class="text-muted text-right">
+                                  12:56PM, Thursday, 17 September 2015
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default right">
+                    <div class="panel-heading">
+                      <div class="pull-right"><img src="assets/images/avatar/avatar2.jpg" class="img-circle" alt=""></div>
+                      <div class="pull-right">Vyloppilli Sreedhara Menon</div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                          <i class="fa fa-bed fa-lg"></i>
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <h5>Movenpick Hotel &amp; Spa</h5>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              5-star hotel
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                              Rs.6686 per night
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <p>Address: </p>
+                              <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                              <p>Phone: 080 4300 1000</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <div class="pull-right">
+                                <div class="offset-T-5">
+                                  <button type="button" class="btn btn-default btn-share">Share</button>
+                                  <button type="button" class="btn btn-primary btn-view">View</button>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                              <div class="pull-left date-time">
+                                <small class="text-muted text-right">
+                                  12:56PM, Thursday, 17 September 2015
+                                </small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default left">
+                    <div class="panel-heading">
+                      <div class="pull-left"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt=""></div>
+                      <div class="pull-left">Madhusoodanan Nair</div>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quam quas consequatur veniam vel aut ullam. Obcaecati quidem, cum magnam culpa ad mollitia, atque similique minima incidunt quod dolore a!</p>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                          <div class="pull-right date-time">
+                            <small class="text-muted text-right">
+                              12:56PM, Thursday, 17 September 2015
+                            </small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="sec-chat">
+                  <div class="input-group">
+                    <input type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button"><i class="fa fa-paper-plane"></i></button>
+                      <button class="btn btn-secondary" type="button"><i class="fa fa-paperclip"></i></button>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane h100" id="listings">
+
+                <div class="listings-tab">
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                          <i class="fa fa-bed fa-lg"></i>
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <h5>Movenpick Hotel &amp; Spa</h5>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              5-star hotel
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                              Rs.6686 per night
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <p>Address: </p>
+                              <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                              <p>Phone: 080 4300 1000</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <div class="pull-right">
+                                <div class="offset-T-5">
+                                  <button type="button" class="btn btn-default btn-share">Share</button>
+                                  <button type="button" class="btn btn-primary btn-view">View</button>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                          <i class="fa fa-bed fa-lg"></i>
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <h5>Movenpick Hotel &amp; Spa</h5>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              5-star hotel
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                              Rs.6686 per night
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <p>Address: </p>
+                              <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                              <p>Phone: 080 4300 1000</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <div class="pull-right">
+                                <div class="offset-T-5">
+                                  <button type="button" class="btn btn-default btn-share">Share</button>
+                                  <button type="button" class="btn btn-primary btn-view">View</button>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                          <i class="fa fa-bed fa-lg"></i>
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <h5>Movenpick Hotel &amp; Spa</h5>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              5-star hotel
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                              Rs.6686 per night
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <p>Address: </p>
+                              <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                              <p>Phone: 080 4300 1000</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <div class="pull-right">
+                                <div class="offset-T-5">
+                                  <button type="button" class="btn btn-default btn-share">Share</button>
+                                  <button type="button" class="btn btn-primary btn-view">View</button>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="panel panel-default">
+                    <div class="panel-body">
+                      <div class="row">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                          <i class="fa fa-bed fa-lg"></i>
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                          <div class="row">
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <h5>Movenpick Hotel &amp; Spa</h5>
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                              5-star hotel
+                            </div>
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                              Rs.6686 per night
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <p>Address: </p>
+                              <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                              <p>Phone: 080 4300 1000</p>
+                            </div>
+                            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                              <div class="pull-right">
+                                <div class="offset-T-5">
+                                  <button type="button" class="btn btn-default btn-share">Share</button>
+                                  <button type="button" class="btn btn-primary btn-view">View</button>
+                                  <div class="clearfix"></div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane h100" id="gallery">
+                <div class="gallery-tab">
+                  <div class="photo-grid">
+                    <div class="grid-item one-three">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/sea.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="grid-item one-three">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/agra.JPG" alt="">
+                      </div>
+                    </div>
+                    <div class="grid-item one-three">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/china.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="grid-item one-three">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/hampi.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="grid-item two-three">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/houseboat.JPG" alt="">
+                      </div>
+                    </div>
+                    <div class="grid-item one-three">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/kathakali.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="grid-item one-three">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/korea.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="grid-item one-three">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/ladakh.JPG" alt="">
+                      </div>
+                    </div>
+                    <div class="grid-item two-two">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/lighthouse.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="grid-item one-three">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/ny.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="grid-item one-three">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/paris.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="grid-item one-three">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/hill.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="grid-item one-three">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/taj.jpg" alt="">
+                      </div>
+                    </div>
+                    <div class="grid-item one-three">
+                      <div class="img-hldr">
+                        <img src="assets/images/feed/kashmir.jpg" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div role="tabpanel" class="tab-pane h100" id="logs">
+                <div class="new-log">
+
+                  <div class="alert notification fade in" role="alert">
+                    <p>Select the listings you want to be included in this log. Click each listing to add text, audio, video or image logs to it. You can add a date and rearrange the order of the listings by dragging.</p>
+                    <a href="#" class="pull-right close-notification" aria-label="Close">Close</a>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="control-bar">
+                    <div class="row">
+                      <div class="col-md-4">
+                        <a href="#" class="highlight" id="publish-log"><i class="fa fa-check-square-o"></i> Publish</a>
+                      </div>
+                      <div class="col-md-4 text-center">
+                        <a href="#" id="save-log-draft"><i class="fa fa-save"></i> Save as draft</a>
+                      </div>
+                      <div class="col-md-4 text-right">
+                        <a href="#" id="cancel-log"><i class="fa fa-close"></i> Cancel</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="clearfix"></div>
+
+                  <ul class="list-unstyled" id="sortable-list">
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Trecking &amp; River Rafting</span>
+                      </label>
+                      <div class="log-details">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <input type="text" class="form-control date-picker" value="23/7/15">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="btn-group attach-list pull-right" role="group">
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-image fa-lg"></i>
+                                <input type="file" name="" id="" data-type="image">
+                              </a>
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-video-camera fa-lg"></i>
+                                <input type="file" name="" id="" data-type="video">
+                              </a>
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-microphone fa-lg"></i>
+                                <input type="file" name="" id="" data-type="audio">
+                              </a>
+                            </div>
+                            <div class="btn-group pull-right" role="group">
+                              <a href="#" class="btn btn-success attach-icon">
+                                <i class="fa fa-paperclip fa-lg"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <textarea class="form-control" rows="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cumque ratione, ipsum dolorum? Ut officiis fugiat vero mollitia doloribus! Nobis vitae a ex possimus, sint dolorum molestiae officiis illum ipsa.
+                            </textarea>
+                            <div class="clearfix"></div>
+                            <div class="upload-preview">
+                              <div class="img-preview"><img src="assets/images/kashmir.jpg">
+                                <button type="button" class="close" aria-label="Close">&times;</button>
+                              </div>
+                              <div class="img-preview">
+                                <video class="media-xs" src="assets/video/other.mp4"></video>
+                                <button type="button" class="close" aria-label="Close">&times;</button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="log-preview" data-content="1">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <input type="text" class="form-control date-picker" value="23/7/15" readonly="readonly">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="btn-group pull-right" role="group">
+                              <a href="#" class="btn btn-success edit-log-icon">
+                                <i class="fa fa-edit fa-lg"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <div id="log-slider" class="carousel slide" data-ride="carousel" data-interval="false">
+                              <div class="carousel-inner">
+                                <div class="item active">
+                                  <video class="media-lg" src="assets/video/other.mp4" width="320" height="180"></video>
+                                </div>
+                                <div class="item">
+                                  <img src="assets/images/rht-img.jpg" alt="">
+                                </div>
+                                <div class="item">
+                                  <video class="media-lg" src="assets/video/other.mp4" width="320" height="180"></video>
+                                </div>
+                              </div>
+                              <a class="left carousel-control" href="#log-slider" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+                              <a class="right carousel-control" href="#log-slider" data-slide="next"><i class="fa fa-angle-right"></i></a>
+                            </div>
+
+                            <div class="clearfix"></div>
+
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cumque ratione, ipsum dolorum? Ut officiis fugiat vero mollitia doloribus! Nobis vitae a ex possimus, sint dolorum molestiae officiis illum ipsa.</p>
+
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Boats, Sailing and Charters</span>
+                      </label>
+                      <div class="log-details">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <input type="text" class="form-control date-picker" value="23/7/15">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="btn-group attach-list pull-right" role="group">
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-image fa-lg"></i>
+                                <input type="file" name="" id="" data-type="image">
+                              </a>
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-video-camera fa-lg"></i>
+                                <input type="file" name="" id="" data-type="video">
+                              </a>
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-microphone fa-lg"></i>
+                                <input type="file" name="" id="" data-type="audio">
+                              </a>
+                            </div>
+                            <div class="btn-group pull-right" role="group">
+                              <a href="#" class="btn btn-success attach-icon">
+                                <i class="fa fa-paperclip fa-lg"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <textarea class="form-control" rows="3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore cumque ratione, ipsum dolorum? Ut officiis fugiat vero mollitia doloribus! Nobis vitae a ex possimus, sint dolorum molestiae officiis illum ipsa.
+                            </textarea>
+                            <div class="clearfix"></div>
+                            <div class="upload-preview"></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="log-preview" data-content="0">
+                        No Content
+                      </div>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Fishing</span>
+                      </label>
+                      <div class="log-details">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <input type="text" class="form-control date-picker" value="23/7/15">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="btn-group attach-list pull-right" role="group">
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-image fa-lg"></i>
+                                <input type="file" name="" id="" data-type="image">
+                              </a>
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-video-camera fa-lg"></i>
+                                <input type="file" name="" id="" data-type="video">
+                              </a>
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-microphone fa-lg"></i>
+                                <input type="file" name="" id="" data-type="audio">
+                              </a>
+                            </div>
+                            <div class="btn-group pull-right" role="group">
+                              <a href="#" class="btn btn-success attach-icon">
+                                <i class="fa fa-paperclip fa-lg"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <textarea class="form-control" rows="2"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Golf, Golf Courses and Golf Cross</span>
+                      </label>
+                      <div class="log-details">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <input type="text" class="form-control date-picker" value="23/7/15">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="btn-group attach-list pull-right" role="group">
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-image fa-lg"></i>
+                                <input type="file" name="" id="" data-type="image">
+                              </a>
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-video-camera fa-lg"></i>
+                                <input type="file" name="" id="" data-type="video">
+                              </a>
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-microphone fa-lg"></i>
+                                <input type="file" name="" id="" data-type="audio">
+                              </a>
+                            </div>
+                            <div class="btn-group pull-right" role="group">
+                              <a href="#" class="btn btn-success attach-icon">
+                                <i class="fa fa-paperclip fa-lg"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <textarea class="form-control" rows="2"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Trecking &amp; River Rafting</span>
+                      </label>
+                      <div class="log-details">
+                        <div class="row">
+                          <div class="col-md-6">
+                            <input type="text" class="form-control date-picker" value="23/7/15">
+                          </div>
+                          <div class="col-md-6">
+                            <div class="btn-group attach-list pull-right" role="group">
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-image fa-lg"></i>
+                                <input type="file" name="" id="" data-type="image">
+                              </a>
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-video-camera fa-lg"></i>
+                                <input type="file" name="" id="" data-type="video">
+                              </a>
+                              <a href="#" class="btn btn-success">
+                                <i class="fa fa-microphone fa-lg"></i>
+                                <input type="file" name="" id="" data-type="audio">
+                              </a>
+                            </div>
+                            <div class="btn-group pull-right" role="group">
+                              <a href="#" class="btn btn-success attach-icon">
+                                <i class="fa fa-paperclip fa-lg"></i>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="col-md-12">
+                            <textarea class="form-control" rows="2"></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Mountain Biking and Cycling</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Canoeing</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Paragliding</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Cycling and Mountain Biking</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Trecking</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Hiking</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Birdwatching</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">River Cruise</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Boating &amp; Fishing</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Water Sports</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Skiing and Snowboarding</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Tramping, Hiking, Guided Walks</span>
+                      </label>
+                    </li>
+                    <li>
+                      <input type="checkbox" value="">
+                      <label>
+                        <span class="sl-text">Adventure</span>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="logs-tab">
+                  <button class="btn addNew" id="add-new-log">Add New Log</button>
+                  <ul class="log-view-listing">
+                    <li>
+                      <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                        <span>22/7/14</span>
+                      </div>
+                      <div class="rht-algn">
+                        <h4>River rafting in kodai is awesome
+                          <span class="toltp-file">
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                            </a>
+                          </span>
+                        </h4>
+                        <small>Sinu moosa</small>
+                        <p>
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                        </p>
+                        <div class="arr-tip">
+                          <i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                        <span>22/7/14</span>
+                      </div>
+                      <div class="rht-algn">
+                        <h4>River rafting in kodai is awesome
+                          <span class="toltp-file">
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                            </a>
+                          </span>
+                        </h4>
+                        <small>Sinu moosa</small>
+                        <p>
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                        </p>
+                        <div class="arr-tip">
+                          <i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                        <span>22/7/14</span>
+                      </div>
+                      <div class="rht-algn">
+                        <h4>River rafting in kodai is awesome
+                          <span class="toltp-file">
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                            </a>
+                          </span>
+                        </h4>
+                        <small>Sinu moosa</small>
+                        <p>
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                        </p>
+                        <div class="arr-tip">
+                          <i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                        <span>22/7/14</span>
+                      </div>
+                      <div class="rht-algn">
+                        <h4>River rafting in kodai is awesome
+                          <span class="toltp-file">
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                            </a>
+                          </span>
+                        </h4>
+                        <small>Sinu moosa</small>
+                        <p>
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                        </p>
+                        <div class="arr-tip">
+                          <i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i>
+                        </div> 
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                        <span>22/7/14</span>
+                      </div>
+                      <div class="rht-algn">
+                        <h4>River rafting in kodai is awesome
+                          <span class="toltp-file">
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                            </a>
+                          </span>
+                        </h4>
+                        <small>Sinu moosa</small>
+                        <p>
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                        </p>
+                        <div class="arr-tip">
+                          <i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                        <span>22/7/14</span>
+                      </div>
+                      <div class="rht-algn">
+                        <h4>River rafting in kodai is awesome
+                          <span class="toltp-file">
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                            </a>
+                          </span>
+                        </h4>
+                        <small>Sinu moosa</small>
+                        <p>
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                        </p>
+                        <div class="arr-tip">
+                          <i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                        <span>22/7/14</span>
+                      </div>
+                      <div class="rht-algn">
+                        <h4>River rafting in kodai is awesome
+                          <span class="toltp-file">
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                              <i class="fa fa-file-text"></i>
+                            </a>
+                          </span>
+                        </h4>
+                        <small>Sinu moosa</small>
+                        <p>
+                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                        </p>
+                        <div class="arr-tip">
+                          <i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Discussion List Section End -->
+
+        <!-- Trip Info Starts Here -->
+        <section class="trips bg-white h100 box-shadow-min bg-grey z20" id="trip-info">
+          <div class="fixed-ch">
+            <div class="img-wrp">
+              <a class="info-btn"><i class="fa fa-info-circle"></i> Info</a>
+              <img src="assets/images/kashmir.jpg" alt="">
+              <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 offset-T1">
+                <div class="pull-right offset-L1 brgr-bttn"><i class="fa fa-times text-white text15"></i></div>
+              </div>
+              <div class="inform-text"><span>Visit to Nainital Mussoorie and Dehradun</span></div>
+            </div>
+            <div class="members-view"> 
+              <div class="top-cntrls shadow-b">
+                <span class="text-uppercase text-mute">Members</span>
+                <a href="#"><i class="fa fa-pencil"></i>Edit cover image</a>
+
+                <a class="mark-us-done active"><i class="fa fa-check"></i>Mark as done</a>
+                <a class="mark-us-done"><i class="fa fa-check"></i>Marked as done</a>
+
+              </div>
+            </div>
+          </div>
+
+          <ul class="members-list-view">
+            <li><a href="#"><span class="circle-img primary-bg"><i class="fa fa-user-plus"></i></span><span class="prflName">Add New</span></a></li>
+            <li><a href="#"><span class="circle-img"><img src="assets/images/avatar/avatar1.jpg" alt=""></span><span class="prflName">Walter White</span></a></li>
+            <li><a href="#"><span class="circle-img"><img src="assets/images/avatar/avatar1.jpg" alt=""></span><span class="prflName">Walter White</span></a></li>
+            <li><a href="#"><span class="circle-img"><img src="assets/images/avatar/avatar1.jpg" alt=""></span><span class="prflName">Walter White</span></a></li>
+            <li><a href="#"><span class="circle-img"><img src="assets/images/avatar/avatar1.jpg" alt=""></span><span class="prflName">Walter White</span></a></li>
+            <li><a href="#"><span class="circle-img"><img src="assets/images/avatar/avatar1.jpg" alt=""></span><span class="prflName">Walter White</span></a></li>
+            <li><a href="#"><span class="circle-img"><img src="assets/images/avatar/avatar1.jpg" alt=""></span><span class="prflName">Walter White</span></a></li>
+            <li><a href="#"><span class="circle-img"><img src="assets/images/avatar/avatar1.jpg" alt=""></span><span class="prflName">Walter White</span></a></li>
+            <li><a href="#"><span class="circle-img"><img src="assets/images/avatar/avatar1.jpg" alt=""></span><span class="prflName">Walter White</span></a></li>
+            <li><a href="#"><span class="circle-img"><img src="assets/images/avatar/avatar1.jpg" alt=""></span><span class="prflName">Walter White</span></a></li>
+            <li><a href="#"><span class="circle-img"><img src="assets/images/avatar/avatar1.jpg" alt=""></span><span class="prflName">Walter White</span></a></li>
+            <li><a href="#"><span class="circle-img"><img src="assets/images/avatar/avatar1.jpg" alt=""></span><span class="prflName">Walter White</span></a></li>
+          </ul>
+        </section>
+        <!-- Trip Info Ends Here -->
+
+        <!-- Share Groups Section Start -->
+        <section class="listing-discussion h100 box-shadow-min bg-white z10" id="share-groups">
+          <div class="expand-btn"><i class="fa fa-angle-right fa-lg"></i></div>
+          <a href="#" class="btn btn-primary pull-right text-normal createNwbttn">Create New</a>
+          <h2>Trips</h2>
+          <div class="scrlHeight">
+            <ul class="trip-lists">
+              <li>
+                <div class="img-wrp-avtr">
+                  <img src="assets/images/trvls-img.jpg" alt="">
+                </div>
+                <div class="trip-cont">
+                  <h5>Visit to-Nainital Mussoorie and Dehradum</h5>
+                  <div class="trip-img-round">
+                    <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+                    <span><img src="assets/images/avatar/avatar2.jpg" alt=""></span>
+                    <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+                    <span class="xtra-view"><i>+4</i></span>
+                  </div>
+                </div>
+                <div class="trip-event-bttns rating-check">
+                  <i class="fa fa-check"></i>
+                  <i class="fa fa-eye"></i>
+                </div>
+              </li>
+
+              <li>
+                <div class="img-wrp-avtr">
+                  <img src="assets/images/trvls-img.jpg" alt="">
+                </div>
+                <div class="trip-cont">
+                  <h5>Visit to-Nainital Mussoorie and Dehradum</h5>
+                  <div class="trip-img-round">
+                    <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+                    <span><img src="assets/images/avatar/avatar2.jpg" alt=""></span>
+                    <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+                    <span class="xtra-view"><i>+4</i></span>
+                  </div>
+                </div>
+                <div class="trip-event-bttns rating-check">
+                  <i class="fa fa-check"></i>
+                  <i class="fa fa-eye"></i>
+                </div>
+              </li>
+
+              <li>
+                <div class="img-wrp-avtr">
+                  <img src="assets/images/trvls-img.jpg" alt="">
+                </div>
+                <div class="trip-cont">
+                  <h5>Visit to-Nainital Mussoorie and Dehradum</h5>
+                  <div class="trip-img-round">
+                    <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+                    <span><img src="assets/images/avatar/avatar2.jpg" alt=""></span>
+                    <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+                    <span class="xtra-view"><i>+4</i></span>
+                  </div>
+                </div>
+                <div class="trip-event-bttns rating-check">
+                  <i class="fa fa-check"></i>
+                  <i class="fa fa-eye"></i>
+                </div>
+              </li>
+
+              <li>
+                <div class="img-wrp-avtr">
+                  <img src="assets/images/trvls-img.jpg" alt="">
+                </div>
+                <div class="trip-cont">
+                  <h5>Visit to-Nainital Mussoorie and Dehradum</h5>
+                  <div class="trip-img-round">
+                    <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+                    <span><img src="assets/images/avatar/avatar2.jpg" alt=""></span>
+                    <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+                    <span class="xtra-view"><i>+4</i></span>
+                  </div>
+                </div>
+                <div class="trip-event-bttns rating-check">
+                  <i class="fa fa-check"></i>
+                  <i class="fa fa-eye"></i>
+                </div>
+              </li>
+
+              <li>
+                <div class="img-wrp-avtr">
+                  <img src="assets/images/trvls-img.jpg" alt="">
+                </div>
+                <div class="trip-cont">
+                  <h5>Visit to-Nainital Mussoorie and Dehradum</h5>
+                  <div class="trip-img-round">
+                    <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+                    <span><img src="assets/images/avatar/avatar2.jpg" alt=""></span>
+                    <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+                    <span class="xtra-view"><i>+4</i></span>
+                  </div>
+                </div>
+                <div class="trip-event-bttns rating-check">
+                  <i class="fa fa-check"></i>
+                  <i class="fa fa-eye"></i>
+                </div>
+              </li>
+
+              <li>
+                <div class="img-wrp-avtr">
+                  <img src="assets/images/trvls-img.jpg" alt="">
+                </div>
+                <div class="trip-cont">
+                  <h5>Visit to-Nainital Mussoorie and Dehradum</h5>
+                  <div class="trip-img-round">
+                    <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+                    <span><img src="assets/images/avatar/avatar2.jpg" alt=""></span>
+                    <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+                    <span class="xtra-view"><i>+4</i></span>
+                  </div>
+                </div>
+                <div class="trip-event-bttns rating-check">
+                  <i class="fa fa-check"></i>
+                  <i class="fa fa-eye"></i>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="sec-chat">
+            <div class="input-group">
+              <input type="text" class="form-control">
+              <span class="input-group-btn">
+                <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
+              </span>
+            </div>
+          </div>
+        </section>
+        <!-- Share Groups Section End -->
+      </div>
+     
+      <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100 rm-offset">
+        <!-- Bucketlist Section Start -->
+        <section class="bucketlist-section box-shadow-min bg-white z45" id="bucketlist">
+          <div class="expand-btn"><i class="fa fa-angle-right fa-lg"></i></div>
+          <h2>Bucketlist</h2>
+          <div class="bucketlistScrll">
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                    <i class="fa fa-bed fa-lg"></i>
+                  </div>
+                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h5>Movenpick Hotel &amp; Spa</h5>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        5-star hotel
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                        Rs.6686 per night
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>Address: </p>
+                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                        <p>Phone: 080 4300 1000</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="pull-left">
+                          <div class="offset-T-5">
+                            <button type="button" class="btn btn-default btn-share">Share</button>
+                            <button type="button" class="btn btn-primary btn-view">View</button>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                    <i class="fa fa-bed fa-lg"></i>
+                  </div>
+                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h5>Movenpick Hotel &amp; Spa</h5>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        5-star hotel
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                        Rs.6686 per night
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>Address: </p>
+                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                        <p>Phone: 080 4300 1000</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="pull-left">
+                          <div class="offset-T-5">
+                            <button type="button" class="btn btn-default btn-share">Share</button>
+                            <button type="button" class="btn btn-primary btn-view">View</button>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                    <i class="fa fa-bed fa-lg"></i>
+                  </div>
+                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h5>Movenpick Hotel &amp; Spa</h5>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        5-star hotel
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                        Rs.6686 per night
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>Address: </p>
+                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                        <p>Phone: 080 4300 1000</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="pull-left">
+                          <div class="offset-T-5">
+                            <button type="button" class="btn btn-default btn-share">Share</button>
+                            <button type="button" class="btn btn-primary btn-view">View</button>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                    <i class="fa fa-bed fa-lg"></i>
+                  </div>
+                  <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                    <div class="row">
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h5>Movenpick Hotel &amp; Spa</h5>
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        5-star hotel
+                      </div>
+                      <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                        Rs.6686 per night
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <p>Address: </p>
+                        <p>115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054</p>
+                        <p>Phone: 080 4300 1000</p>
+                      </div>
+                      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="pull-left">
+                          <div class="offset-T-5">
+                            <button type="button" class="btn btn-default btn-share">Share</button>
+                            <button type="button" class="btn btn-primary btn-view">View</button>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Bucketlist Section Start -->
+
+        <!-- Listing Section Start -->
+        <section class="section-listing h100 box-shadow-min bg-white z35" id="listing">
+          <div class="fixed-ch">
+            <div class="img-wrp">
+              <a href="#" class="share-btn">Share</a>
+              <img src="assets/images/rht-img.jpg" alt="">
+              <h2><i class="fa fa-bicycle"></i><span>Trekking and River Rafting</span>
+                <div class="dropdown setting-sml">
+                  <i class="dropdown-toggle fa fa-cog" type="button" data-toggle="dropdown" >
+                  </i>
+                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                    <li><a href="#">Edit</a></li>
+                    <li><a href="#">Flag Listing</a></li>
+                    <li><a href="#">Claim Listing</a></li>
+                  </ul>
+                </div>
+                <div class="rating-check">
+                  <i class="fa fa-heart-o"></i>
+                  <i class="fa fa-check"></i>
+                </div>
+                <small>Rishikesh, Utterkhand</small>
+              </h2>
+            </div>
+            <div role="tabpanel" class="overlay-tab-hd">
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#discussionTab" aria-controls="discussionTab" role="tab" data-toggle="tab">Quick&nbsp;Info</a>
+                </li>
+                <!-- <li role="presentation">
+                  <a href="#itineraryTab" aria-controls="itineraryTab" role="tab" data-toggle="tab">Itinerary</a>
+                </li>
+                <li role="presentation">
+                  <a href="#staysTab" aria-controls="staysTab" role="tab" data-toggle="tab">Stays</a>
+                </li>
+                <li role="presentation">
+                  <a href="#gearTab" aria-controls="gearTab" role="tab" data-toggle="tab">Gear</a>
+                </li>
+                <li role="presentation">
+                  <a href="#pricingTab" aria-controls="pricingTab" role="tab" data-toggle="tab">Pricing</a>
+                </li> -->
+              </ul>
+            </div>
+            <div class="after-arrng">
+              <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="discussionTab">
+                  <div class="listing-icons">
+                    <a href="#"><i class="fa fa-rupee"></i><span>2400/person</span></a>
+                    <a href="#"><i class="fa fa-hourglass-half"></i><span>1h 30m</span></a>
+                    <a href="#"><i class="fa fa-users"></i><span>1 person</span></a>
+                    <a href="#"><i class="fa fa-flash"></i><span>Intermediate</span></a>
+                    <a href="#"><i class="fa fa-rupee"></i><span>2400/person</span></a>
+                    <a href="#"><i class="fa fa-hourglass-half"></i><span>1h 30m</span></a>
+                    <a href="#"><i class="fa fa-users"></i><span>1 person</span></a>
+                    <a href="#"><i class="fa fa-flash"></i><span>Intermediate</span></a>
+                  </div>
+                </div>
+                <!-- <div role="tabpanel" class="tab-pane" id="itineraryTab">Itinerary</div>
+                <div role="tabpanel" class="tab-pane" id="staysTab">Stays</div>
+                <div role="tabpanel" class="tab-pane" id="gearTab">Gear</div>
+                <div role="tabpanel" class="tab-pane" id="pricingTab">Pricing</div> -->
+              </div>
+              <div class="sml-tags">
+                <ul>
+                  <li>
+                    <a href="#">Rafing</a>
+                    <a href="#">Air</a>
+                    <a href="#">Rafting</a>
+                  </li>
+                  <li>
+                    <a href="#">Adventure</a>
+                    <a href="#">Water</a>
+                    <a href="#">River</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div role="tabpanel" class="secndryTabs">
+              <ul class="nav nav-tabs nav-justified" role="tablist">
+                <li role="presentation" class="active">
+                  <a href="#logsTab" aria-controls="logsTab" role="tab" data-toggle="tab">Logs</a>
+                </li>
+
+                <li role="presentation">
+                  <a href="#savedTab" aria-controls="savedTab" role="tab" data-toggle="tab">Saved</a>
+                </li>
+
+                <li role="presentation">
+                  <a href="#mylogsTab" aria-controls="mylogsTab" role="tab" data-toggle="tab">My Logs</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="tab-content mrgin-top-secdry1">
+            <div role="tabpanel" class="tab-pane active" id="logsTab">
+              <ul class="log-view-listing">
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip">
+                      <i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i>
+                    </div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="savedTab">
+              <ul class="log-view-listing">
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip">
+                      <i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i>
+                    </div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="mylogsTab">
+              <ul class="log-view-listing">
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip">
+                      <i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i>
+                    </div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+                <li>
+                  <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
+                    <span>22/7/14</span>
+                  </div>
+                  <div class="rht-algn">
+                    <h4>River rafting in kodai is awesome
+                      <span class="toltp-file">
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
+                        <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
+                          <i class="fa fa-file-text"></i>
+                        </a>
+                      </span>
+                    </h4>
+                    <small>Sinu moosa</small>
+                    <p>
+                      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
+                    <button type="button" class="btn btn-default">Save Log</button>
+                    <div class="clearfix"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <!-- Listing Section End -->
+
+        <!-- Gallery Feed Section Start -->
+        <section class="feed h100 box-shadow-min bg-white z50" id="gallery-feed">
+          <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 h100 rm-offset">
+            <div class="photo-grid">
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/sea.jpg" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/agra.JPG" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/china.jpg" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/hampi.jpg" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item two-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/houseboat.JPG" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/kathakali.jpg" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/korea.jpg" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/ladakh.JPG" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item two-two">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/lighthouse.jpg" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/ny.jpg" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/paris.jpg" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/hill.jpg" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/taj.jpg" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="grid-item one-three">
+                <div class="img-hldr">
+                  <img src="assets/images/feed/kashmir.jpg" alt="">
+                  <div class="photo-overlay">
+                    <a href="#">
+                      <h2>
+                        <i class="fa fa-bicycle"></i>
+                        <span>Trekking and River Rafting</span>
+                      </h2>
+                      <footer><small>Andaman &amp; Nicobar Islands</small></footer>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Gallery Feed Section End -->
+      </div>
+    </div>
+  </div>
+
+  <div class="login-page inPage">
+    <div class="container-fluid content-wrapper">
+      <div class="h100 bg-cover login-inner">
+        <img src="assets/images/login-bg.jpg" alt="" class="login-bg">
+        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8 h100 pd-0">
+          <a href="#" class="brand">site logo</a>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100 bg-light">
+          <div class="flex">
+            <div class="form-sec">
+              <form action="">
+                <input type="text" class="form-control" placeholder="Username">
+                <input type="text" class="form-control" placeholder="Password">
+
+                <div class="checkbox-login">
+                  <input type="checkbox" id="myCheckbox" name="myCheckbox" value="myCheckbox" checked>
+                  <label for="myCheckbox">Keep me signed in</label>
+                </div>
+                <button type="button" class="btn btn-danger text-uppercase signup-btn">Sign In</button>
+                <div class="sign-up-right">If you are a new User <a href="#">sign up</a> here </div>
+              </form>
+            </div>
+          </div>
+          <button type="button" class="btn btn-primary text-uppercase signin-btn-login">Sign In</button>
+        </div>
+      </div>
+    </div>
+  </div>   
+    
+  <script src="assets/js/jquery-1.11.2.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+  <!--<script src="assets/js/scrollReveal.min.js"></script>-->
+  <!--<script src="assets/js/jquery.transit.min.js"></script>-->
+
+  <script src="assets/js/moment.min.js"></script>
+  <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+  
+  <script src="assets/js/Sortable.min.js"></script>
+
+  <script src="assets/mediaelement/mediaelement-and-player.min.js"></script>
+
+  <script src="assets/js/jquery.sessionStorage.js"></script>
+
+  <script src="assets/js/slick.min.js"></script>
+
+  <script src="assets/js/TweenLite.min.js"></script>
+  <script src="assets/js/TimelineLite.min.js"></script>
+  <script src="assets/js/CSSPlugin.min.js"></script>
+  <script src="assets/js/EasePack.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+
+    // $('.brgr-bttn').bind('click', function() {
+    //   $("#section2").transition({ x:'100%', delay: 300}, 1000, 'ease');
+    // });
+
+    $(function() {
+
+      $('.listing-icons').slick({
+        dots: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1
+      });
+
+      $('.new-log .close-notification').click(function(e) {
+        e.preventDefault();
+        $(this).parent().hide();
+        $(document).sessionStorage("isVisited", "5");
+      });
+      
+      if($(document).sessionStorage("isVisited") === "5") {
+        $('.new-log .notification').hide();
+      } else {
+        $('.new-log .notification').show();
+      }
+
+      var pageHeight = $(window).outerHeight(),
+        headerHeight = $('header.navbar').outerHeight(),
+        sectionTitle = $('.bucketlist-section h2').outerHeight(),
+        sectionWidth = $('.listing-discussion').width(),
+        titleHeight = $('.listing-discussion').find('h2').outerHeight(),
+        chatHeight = $('.listing-discussion').find('.sec-chat').outerHeight(),
+        logHeader = $('#discussion-list .inform-text').height()+$('#discussion-list .page-header').height();
+
+        $('.scrlHeight').height(pageHeight-(headerHeight+titleHeight+chatHeight+15));
+        $('.listing-discussion .sec-chat').css({'width': sectionWidth});
+
+        $('.date-picker').datetimepicker({
+          format: 'DD/M/YYYY'
+        });
+
+        function photoGrid() {
+          $('#gallery-feed .grid-item').each(function() {
+            var gridHeight = $('#gallery-feed .one-three').width();
+            $('#gallery-feed .one-three').height(gridHeight);
+            $('#gallery-feed .two-three').height(gridHeight);
+            $('#gallery-feed .two-two').height((gridHeight*2)+10);
+          });
+          $('#gallery-feed .img-hldr').each(function () {
+            if ($(this).find('img').length){
+              var getImage = $(this).find('img').attr('src');
+              $(this).css({"background-image":"url("+getImage+")"});
+              $(this).find('img').hide();
+            }
+          });
+        }
+
+        photoGrid();
+
+        $(window).resize(function() {
+          photoGrid();
+        });
+
+        $(".photo-grid").mCustomScrollbar({
+          theme:"dark-thin"
+        });
+
+        $(".scrlHeight").mCustomScrollbar({
+          theme:"dark-thin",
+        });
+
+      $("#discussion-list").mCustomScrollbar({
+        theme:"dark-thin",
+        callbacks:{
+          whileScrolling:function(){ 
+            valScrlAnm(this.mcs.topPct);
+          },
+          alwaysTriggerOffsets:false,
+          onScroll: function() {
+            if($(this).data("mCS").trigger==="external"){
+              TweenLite.to(".discussion .logs-tab", 0, {css: {opacity: "0", display: "none"}});
+              TweenLite.to(".discussion .new-log", 1, {css: {opacity: "1", display: "block"}});
+              $("#discussion-list").mCustomScrollbar("disable", true);
+              $('#discussion-list .fixed-ch').css({'height': ''});
+              $('#discussion-list .img-wrp').css({'height': ''});
+              $('#discussion-list .tab-body').css({'padding-top': 88});
+              $('#discussion-list .nav-tabs').addClass('tab-disabled');
+              $('.media-lg').mediaelementplayer({
+                features: ['playpause','progress','volume'],
+                videoWidth: 320,
+                videoHeight: 180,
+                audioWidth: 260,
+                audioHeight: 30
+              });
+              $('.media-xs').mediaelementplayer({
+                features: [],
+                videoWidth: 80,
+                videoHeight: 60,
+                audioWidth: 80,
+                audioHeight: 60
+              });
+            } else{
+              //last scrolling event was triggered by the user
+            }
+          }
+        }
+      });
+
+      $(".new-log").mCustomScrollbar({
+        theme:"dark-thin",
+        setTop: 100
+      });
+
+      $('.new-log .attach-icon').bind('click', function(e) {
+        e.preventDefault();
+        $(this).parent().siblings('.attach-list').show();
+        $(this).hide();
+      });
+
+      $('.new-log .edit-log-icon').bind('click', function(e) {
+        e.preventDefault();
+        $(this).parent().parent().parent().parent().hide().siblings('.log-details').show();
+      });
+
+      $('.new-log .list-unstyled li').each(function() {
+
+        $(this).find('label').click(function(e) {
+          var logPreview = $(this).siblings('.log-preview').attr('data-content');
+          if ($(this).siblings('input[type="checkbox"]').is(':checked')){
+            if (logPreview === "1") {
+              $(this).siblings('.log-preview').toggle();
+              $(this).parent().toggleClass('selected');
+            } else if (logPreview === "0") {
+              $(this).siblings('.log-details').toggle();
+              $(this).parent().toggleClass('selected');
+            }
+          } else {
+            $(this).siblings('.log-details').hide();
+            $(this).siblings('.log-preview').hide();
+            $(this).parent().removeClass('selected');
+          }
+          $(this).parent().siblings('li').removeClass('selected');
+          $(this).parent().siblings('li').find('.log-preview').hide();
+          $(this).parent().siblings('li').find('.log-details').hide();
+        });
+
+        $(this).find('input[type="checkbox"]').change(function(e) {
+          if (!$(this).is(':checked')) {
+            $(this).parent().removeClass('selected');
+            $(this).parent().find('.log-preview').hide();
+            $(this).parent().find('.log-details').hide();
+          };
+        });
+
+        $('.img-preview .close').click(function(e) {
+          e.preventDefault();
+          $(this).parent().remove();
+        });
+
+      });
+
+      $('.new-log input[type="file"]').change(showPreviewImage_click);
+
+      function showPreviewImage_click(e) {
+        var $input = $(this);
+        var inputFiles = this.files;
+        if(inputFiles == undefined || inputFiles.length == 0) return;
+        var inputFile = inputFiles[0];
+
+        var dataType = $(this).attr('data-type');
+        var previewTarget = $input.parent().parent().parent().parent().parent().find('.upload-preview');
+
+        var reader = new FileReader();
+        reader.onload = function(event) {
+          // $input.next().attr("src", event.target.result);
+          if (dataType === 'image') {
+            previewTarget.append('<div class="img-preview"><img src="'+event.target.result+'"><button type="button" class="close" aria-label="Close">&times;</button></div>');
+          } else if (dataType === 'video') {
+            previewTarget.append('<div class="img-preview"><video src="'+this.result+'"></video><button type="button" class="close" aria-label="Close">&times;</button></div>');
+          } else if (dataType === 'audio') {
+            previewTarget.append('<div class="img-preview"><audio src="'+this.result+'"></audio><button type="button" class="close" aria-label="Close">&times;</button></div>');
+          }
+          $('.img-preview .close').click(function(e) {
+            e.preventDefault();
+            $(this).parent().remove();
+          });
+        };
+        reader.onerror = function(event) {
+          alert("Upload Failed: " + event.target.error.code);
+        };
+        reader.readAsDataURL(inputFile);
+      }
+
+      $('.bucketlistScrll').css('height', pageHeight - (headerHeight+sectionTitle+20));
+
+      $(".bucketlistScrll").mCustomScrollbar({
+        theme:"dark-thin"
+      });
+
+      chatHolder = $('.sec-chat').outerHeight();
+      $('.discussion').css({'padding-bottom': chatHolder});
+
+      $(".new-log").css({'height': pageHeight - (headerHeight+logHeader)-26});
+      $('#discussion-list .control-bar').css({'width': sectionWidth});
+      $('.new-log .list-unstyled').css({'margin-top': 40});
+
+      // Parallax
+      crrntHt = $('.img-wrp').height();
+      sectionWidth = $('section.discussion').width();
+
+      $('#discussion-list .tab-body').css({'padding-top': crrntHt+40});
+
+      $('#add-new-log').bind('click', function(e) {
+        e.preventDefault();
+        $("#discussion-list").mCustomScrollbar("scrollTo","bottom", {callbacks: true});
+      });
+
+      $('#publish-log, #save-log-draft, #cancel-log').bind('click', function(e) {
+        e.preventDefault();
+        TweenLite.to("#discussion-list .logs-tab", 1, {css: {opacity: "1", display: "block"}});
+        TweenLite.to("#discussion-list .new-log", 0.1, {css: {opacity: "0", display: "none"}});
+
+        $("#discussion-list").mCustomScrollbar("update");
+
+        $('#discussion-list .tab-body').css({'padding-top':crrntHt+47});
+        $('#discussion-list .img-wrp').css({'height': crrntHt, 'background-position-y': ''});
+        $('#discussion-list .fixed-ch').css({'height': crrntHt+55, 'width': sectionWidth});
+
+        $('#discussion-list .nav-tabs').removeClass('tab-disabled');
+      });
+
+      if(navigator.userAgent.indexOf('MSIE')!==-1 || navigator.appVersion.indexOf('Trident/') > 0){
+        ieAnim();
+        $('.fixed-ch').css({'height': crrntHt+40, 'width': sectionWidth, top: 47});
+      } else {
+        webkitAnim();
+        $('.fixed-ch').css({'height': crrntHt+40, 'width': sectionWidth, top: 0});
+      }
+      
+      
+      function ieAnim() {
+        TweenLite.to("#bucketlist, #listing", 0, {left: '100%'});
+        TweenLite.to("#discussion-list, #share-groups, #trip-info", 0, {left: '200%'});
+        TweenLite.to("#gallery-feed", 0, {left: '0%'});
+        TweenLite.to("#trip-info", 0, {opacity: 0});
+
+        activeBucketlist = 0;
+        activeList = 0;
+
+        $('#bl-btn').bind('click', function(e) {
+          e.preventDefault();
+          if (activeBucketlist === 0){
+            TweenLite.to("#gallery-feed", 0, {left: '0%'});
+            TweenLite.to("#gallery-feed", 1, {left: '100%', delay: 1.2});
+            TweenLite.to("#bucketlist", 1, {left: '-100%', delay: 0.2});
+            TweenLite.to("#bucketlist", 1, {left: '0%', delay: 1.2});
+            TweenLite.to("#listing", 1, {left: '100%', delay: 0.2});
+          } else if (activeBucketlist === 1) {
+            TweenLite.to("#gallery-feed", 1, {left: '100%', delay: 0.2});
+            TweenLite.to("#bucketlist", 1, {left: '0%', delay: 0.2});
+            TweenLite.to("#listing", 1, {left: '100%', delay: 0.2});
+          }
+          activeBucketlist = 1;
+          activeList = 1;
+          TweenLite.to("#discussion-list, #trip-info", 2, {left: '200%', delay: 0.2});
+          TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+          TweenLite.to("#share-groups", 2, {left: '200%', delay: 0.2});
+
+          TweenLite.to("#bucketlist .expand-btn", 0.5, {left: '-15'});
+          TweenLite.to("#share-groups .expand-btn", 0.5, {left: '-15', delay: 0.2});
+        });
+
+        $('#bucketlist .expand-btn').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#bucketlist", 1, {left: '100%', delay: 0.2});
+          TweenLite.to("#share-groups", 2, {left: '200%', delay: 0.2});
+          TweenLite.to("#gallery-feed", 1, {left: '0%', delay: 0.2});
+          TweenLite.to("#discussion-list, #trip-info", 2, {left: '200%', delay: 0.2});
+          TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+          activeBucketlist = 0;
+        });
+
+        $('#bucketlist .btn-share').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#share-groups", 1, {left: '0%', delay: 0.2});
+          TweenLite.to("#discussion-list, #trip-info", 2, {left: '200%', delay: 0.2});
+          TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+
+          activeList = 0;
+        });
+
+        $('#bucketlist .btn-view').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#listing", 1, {left: '-100%', delay: 0.2});
+          TweenLite.to("#listing", 1, {left: '0%', delay: 1.2});
+          TweenLite.to("#bucketlist", 1, {left: '100%', delay: 1.2});
+
+          TweenLite.to("#gallery-feed", 1, {left: '100%', delay: 0.2});
+          TweenLite.to("#share-groups", 2, {left: '200%', delay: 0.2});
+          TweenLite.to("#discussion-list, #trip-info", 2, {left: '200%', delay: 0.2});
+          TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+
+          TweenLite.to("#bucketlist .expand-btn", 0.5, {left: '0%', delay: 2});
+
+          activeList = 1;
+        });
+
+        $('#discussion-list .btn-view').bind('click', function(e) {
+          e.preventDefault();
+          if(activeList === 0){
+            TweenLite.to("#listing", 1, {left: '-100%', delay: 0.2});
+            TweenLite.to("#listing", 1, {left: '0%', delay: 1.2});
+            TweenLite.to("#bucketlist", 1, {left: '100%', delay: 1.2});
+
+            TweenLite.to("#gallery-feed", 1, {left: '100%', delay: 0.2});
+            TweenLite.to("#share-groups", 2, {left: '200%', delay: 0.2});
+            TweenLite.to("#discussion-list, #trip-info", 2, {left: '200%', delay: 0.2});
+            TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+
+            TweenLite.to("#bucketlist .expand-btn", 0.5, {left: '0%', delay: 2});
+          } else if (activeList === 1){
+            TweenLite.to("#gallery-feed", 1, {left: '100%', delay: 0.2});
+            TweenLite.to("#share-groups", 2, {left: '200%', delay: 0.2});
+            TweenLite.to("#discussion-list, #trip-info", 2, {left: '200%', delay: 0.2});
+            TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+
+            TweenLite.to("#bucketlist .expand-btn", 0.5, {left: '0%', delay: 0.5});
+          }
+
+        });
+
+        $('#share-groups .expand-btn').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#share-groups", 2, {left: '200%', delay: 0.2});
+        });
+
+        $('#share-groups .trip-lists li').bind('click', function(e) {
+          e.preventDefault();
+          $("#bucketlist").removeClass('').addClass('');
+          TweenLite.to("#discussion-list", 1, {left: '-100%', delay: 0.2});
+          TweenLite.to("#share-groups", 1, {left: '100%', delay: 1.2});
+          TweenLite.to("#discussion-list", 1, {left: '0%', delay: 1.2});
+
+          TweenLite.to("#share-groups .expand-btn", 0.5, {left: '0%', delay: 1.2});
+        });
+
+        $('#discussion-list .brgr-bttn, #discussion-list .btn-share').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#discussion-list", 1, {left: '100%', delay: 0.2});
+          TweenLite.to("#share-groups", 1, {left: '0%', delay: 0.2});
+
+          TweenLite.to("#share-groups .expand-btn", 0.5, {left: '-15', delay: 0.2});
+        });
+
+        $('#listing .img-wrp .share-btn').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#share-groups", 1, {left: '0%', delay: 0.2});
+          TweenLite.to("#discussion-list, #trip-info", 1, {left: '100%', delay: 0.2});
+          TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+
+          TweenLite.to("#share-groups .expand-btn", 0.5, {left: '-15', delay: 0.2});
+        });
+
+        $('#discussion-list .inform-text').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#trip-info", 0, {left: '0%'});
+          TweenLite.to("#trip-info", 1, {opacity: 1, delay: 0.2});
+        });
+
+        $('#trip-info .brgr-bttn').bind('click', function() {
+          TweenLite.to("#trip-info", 1, {opacity: 0, delay: 0.2});
+          TweenLite.to("#trip-info", 0, {left: '200%', delay: 1.2});
+        });
+      }
+
+      function webkitAnim() {
+        TweenLite.to("#bucketlist, #listing", 0, {x: '100%'});
+        TweenLite.to("#discussion-list, #share-groups, #trip-info", 0, {x: '200%'});
+        TweenLite.to("#gallery-feed", 0, {x: '0%'});
+        TweenLite.to("#trip-info", 0, {opacity: 0});
+
+        activeBucketlist = 0;
+        activeList = 0;
+
+        $('#bl-btn').bind('click', function(e) {
+          e.preventDefault();
+          if (activeBucketlist === 0){
+            TweenLite.to("#gallery-feed", 0, {x: '0%'});
+            TweenLite.to("#gallery-feed", 1, {x: '100%', delay: 1.2});
+            TweenLite.to("#bucketlist", 1, {x: '-100%', delay: 0.2});
+            TweenLite.to("#bucketlist", 1, {x: '0%', delay: 1.2});
+            TweenLite.to("#listing", 1, {x: '100%', delay: 0.2});
+          } else if (activeBucketlist === 1) {
+            TweenLite.to("#gallery-feed", 1, {x: '100%', delay: 0.2});
+            TweenLite.to("#bucketlist", 1, {x: '0%', delay: 0.2});
+            TweenLite.to("#listing", 1, {x: '100%', delay: 0.2});
+          }
+          activeBucketlist = 1;
+          activeList = 1;
+          TweenLite.to("#discussion-list, #trip-info", 2, {x: '200%', delay: 0.2});
+          TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+          TweenLite.to("#share-groups", 2, {x: '200%', delay: 0.2});
+
+          TweenLite.to("#bucketlist .expand-btn", 0.5, {left: '-15'});
+          TweenLite.to("#share-groups .expand-btn", 0.5, {left: '-15', delay: 0.2});
+        });
+
+        $('#bucketlist .expand-btn').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#bucketlist", 1, {x: '100%', delay: 0.2});
+          TweenLite.to("#share-groups", 2, {x: '200%', delay: 0.2});
+          TweenLite.to("#gallery-feed", 1, {x: '0%', delay: 0.2});
+          TweenLite.to("#discussion-list, #trip-info", 2, {x: '200%', delay: 0.2});
+          TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+          activeBucketlist = 0;
+        });
+
+        $('#bucketlist .btn-share').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#share-groups", 1, {x: '0%', delay: 0.2});
+          TweenLite.to("#discussion-list, #trip-info", 2, {x: '200%', delay: 0.2});
+          TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+
+          activeList = 0;
+        });
+
+        $('#bucketlist .btn-view').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#listing", 1, {x: '-100%', delay: 0.2});
+          TweenLite.to("#listing", 1, {x: '0%', delay: 1.2});
+          TweenLite.to("#bucketlist", 1, {x: '100%', delay: 1.2});
+
+          TweenLite.to("#gallery-feed", 1, {x: '100%', delay: 0.2});
+          TweenLite.to("#share-groups", 2, {x: '200%', delay: 0.2});
+          TweenLite.to("#discussion-list, #trip-info", 2, {x: '200%', delay: 0.2});
+          TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+
+          TweenLite.to("#bucketlist .expand-btn", 0.5, {left: '0%', delay: 2});
+
+          activeList = 1;
+        });
+
+        $('#discussion-list .btn-view').bind('click', function(e) {
+          e.preventDefault();
+          if(activeList === 0){
+            TweenLite.to("#listing", 1, {x: '-100%', delay: 0.2});
+            TweenLite.to("#listing", 1, {x: '0%', delay: 1.2});
+            TweenLite.to("#bucketlist", 1, {x: '100%', delay: 1.2});
+
+            TweenLite.to("#gallery-feed", 1, {x: '100%', delay: 0.2});
+            TweenLite.to("#share-groups", 2, {x: '200%', delay: 0.2});
+            TweenLite.to("#discussion-list, #trip-info", 2, {x: '200%', delay: 0.2});
+            TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+
+            TweenLite.to("#bucketlist .expand-btn", 0.5, {left: '0%', delay: 2});
+          } else if (activeList === 1){
+            TweenLite.to("#gallery-feed", 1, {x: '100%', delay: 0.2});
+            TweenLite.to("#share-groups", 2, {x: '200%', delay: 0.2});
+            TweenLite.to("#discussion-list, #trip-info", 2, {x: '200%', delay: 0.2});
+            TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+
+            TweenLite.to("#bucketlist .expand-btn", 0.5, {left: '0%', delay: 0.5});
+          }
+
+        });
+
+        $('#share-groups .expand-btn').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#share-groups", 2, {x: '200%', delay: 0.2});
+        });
+
+        $('#share-groups .trip-lists li').bind('click', function(e) {
+          e.preventDefault();
+          $("#bucketlist").removeClass('').addClass('');
+          TweenLite.to("#discussion-list", 1, {x: '-100%', delay: 0.2});
+          TweenLite.to("#share-groups", 1, {x: '100%', delay: 1.2});
+          TweenLite.to("#discussion-list", 1, {x: '0%', delay: 1.2});
+
+          TweenLite.to("#share-groups .expand-btn", 0.5, {left: '0%', delay: 1.2});
+        });
+
+        $('#discussion-list .brgr-bttn, #discussion-list .btn-share').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#discussion-list", 1, {x: '100%', delay: 0.2});
+          TweenLite.to("#share-groups", 1, {x: '0%', delay: 0.2});
+
+          TweenLite.to("#share-groups .expand-btn", 0.5, {left: '-15', delay: 0.2});
+        });
+
+        $('#listing .img-wrp .share-btn').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#share-groups", 1, {x: '0%', delay: 0.2});
+          TweenLite.to("#discussion-list, #trip-info", 1, {x: '100%', delay: 0.2});
+          TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+
+          TweenLite.to("#share-groups .expand-btn", 0.5, {left: '-15', delay: 0.2});
+        });
+
+        $('#discussion-list .inform-text').bind('click', function(e) {
+          e.preventDefault();
+          TweenLite.to("#trip-info", 0, {x: '0%'});
+          TweenLite.to("#trip-info", 1, {opacity: 1, delay: 0.2});
+        });
+
+        $('#trip-info .brgr-bttn').bind('click', function() {
+          TweenLite.to("#trip-info", 1, {opacity: 0, delay: 0.2});
+          TweenLite.to("#trip-info", 0, {x: '200%', delay: 1.2});
+        });
+      }
+      // Animation Script Ends Here
+
+      $('#discussion-list .sec-chat').css({'width': sectionWidth});
+
+      setTimeout(function(){ 
+        $('.fixed-ch').css({'height': crrntHt+44, 'width': sectionWidth});
+      }, 800);
+
+      function valScrlAnm(recevedVl) {
+        $('#discussion-list .fixed-ch').css({'height': crrntHt - ((recevedVl/80)*crrntHt)+44, 'min-height': 88});
+        $('#discussion-list .img-wrp').css({'height': crrntHt - ((recevedVl/80)*crrntHt), 'min-height': 44, 'background-position-y': 0 - recevedVl});
+      }
+
+      // var initPadd = $('.discussion .tab-body').css('padding-top'),
+      //   initImgHeight = $('.discussion .img-wrp').css('height'),
+      //   initStickyHeight = $('.discussion .fixed-ch').css('height'),
+      //   initBgPosition = $('.discussion .img-wrp').css('background-position-y');
+
+      // function resetParallax() {
+      //   $('.discussion .tab-body').css({'padding-top':initPadd});
+      //   $('.discussion .img-wrp').css({'height': initImgHeight});
+      //   $('.discussion .fixed-ch').css({'height': initStickyHeight});
+      //   $('.discussion .img-wrp').css({'background-position-y': initBgPosition});
+      //   $('#discussion-list').mCustomScrollbar('scrollTo',['top',null]);
+      // }
+
+      // $('.discussion .nav-tabs a').click(function(e) {
+      //   resetParallax();
+      // });
+
+
+
+      $("#listing").mCustomScrollbar({
+        scrollButtons:{enable:false},
+        theme:"dark-thin",
+        callbacks:{
+          whileScrolling:function(){ 
+            valScrlAnm2(this.mcs.topPct);
+          },
+          alwaysTriggerOffsets:false
+        }
+      });
+
+
+    sectionWidth2 = $('section.section-listing').width();
+    $('#listing .sec-chat').css({'width': sectionWidth2-55});
+
+    tpTabHt = $('#listing .after-arrng').height();
+    crrntHt = $('#listing .img-wrp').height();
+    totalHt = tpTabHt + crrntHt;
+    secndryTabsHt = $('#listing .img-wrp').height() + $('#listing .after-arrng').height();
+    smltagsHt = $('#listing .sml-tags').height();
+
+    $('#listing .mrgin-top-secdry1').css({'margin-top': totalHt+50});
+
+      setTimeout(function(){ 
+        if(navigator.userAgent.indexOf('MSIE')!==-1 || navigator.appVersion.indexOf('Trident/') > 0){
+          $('#listing .fixed-ch').css({'height': totalHt+30, 'width': sectionWidth2, 'top': 47});
+          $('#listing .secndryTabs').css({'top':0 ,'padding-top': secndryTabsHt+46,'width':sectionWidth2 , 'position': 'fixed'});
+        } else {
+          $('#listing .fixed-ch').css({'height': totalHt+30, 'width': sectionWidth2, 'top': 0});
+          $('#listing .secndryTabs').css({'top':0 ,'padding-top': secndryTabsHt-1,'width':sectionWidth2 , 'position': 'fixed'});
+        }
+      }, 800);
+
+      function valScrlAnm2(recevedVl) {
+        $('#listing .fixed-ch').css({'height': totalHt - ((recevedVl/80)*totalHt)+30+47, 'min-height': secndryTabsHt+47});
+        $('#listing .img-wrp').css({'height': crrntHt - ((recevedVl/80)*crrntHt), 'min-height': 100, 'background-position-y':  0 - recevedVl});
+  
+          secndryTabsHt = $('#listing .img-wrp').height() + $('#listing .after-arrng').height();
+          if(navigator.userAgent.indexOf('MSIE')!==-1 || navigator.appVersion.indexOf('Trident/') > 0){
+            $('#listing .secndryTabs').css({'padding-top': secndryTabsHt+46, 'bottom': 0, 'height': 38, 'min-height': secndryTabsHt});
+          } else {
+            $('#listing .secndryTabs').css({'padding-top': secndryTabsHt-1, 'bottom': 0, 'height': 38, 'min-height': secndryTabsHt});
+          }
+         
+       
+        if (recevedVl<15){
+          $('#listing .sml-tags').css({'height': smltagsHt, 'margin-top':13});
+        }
+        else {
+          $('#listing .sml-tags').css({'height': 0, 'margin-top':3});
+        }
+
+        if (recevedVl<20){
+          $('#listing .share-btn').fadeIn('fast');
+        }
+        else {          
+          $('#listing .share-btn').fadeOut('fast');
+        }    
+      }
+
+      //resetParallax
+      $('#listing .secndryTabs .nav-tabs li a').click(function() {
+        $('#listing .mrgin-top-secdry1').css({'margin-top': totalHt+50});
+        $('#listing .img-wrp').css({'background-position-y': 0, 'height': crrntHt});
+        if(navigator.userAgent.indexOf('MSIE')!==-1 || navigator.appVersion.indexOf('Trident/') > 0){
+          $('#listing .fixed-ch').css({'height': totalHt+30, 'width': sectionWidth, 'top': 47});
+          $('#listing .secndryTabs').css({'top':0 ,'padding-top': totalHt+46,'width':sectionWidth , 'position': 'fixed'});
+        } else {
+          $('#listing .fixed-ch').css({'height': totalHt+30, 'width': sectionWidth, 'top': 0});
+          $('#listing .secndryTabs').css({'top':0 ,'padding-top': totalHt-1,'width':sectionWidth , 'position': 'fixed'});
+        }
+        $('#listing .sml-tags').css({'height': smltagsHt, 'margin-top':13});
+        $('#listing .share-btn').fadeIn(0);
+        $('#listing').mCustomScrollbar('scrollTo',['top',null]);
+      });
+
+      var list = document.getElementById("sortable-list");
+      Sortable.create(list);
+
+      $("#trip-info").mCustomScrollbar({
+        scrollButtons:{enable:false},
+        theme:"dark-thin",
+        callbacks:{
+          whileScrolling:function(){ 
+            valScrlAnm3(this.mcs.topPct);
+          },
+          alwaysTriggerOffsets:false
+        }
+      });
+
+      var crrntHt3 = $('#trip-info .img-wrp').height(),
+      trpHd = $('#trip-info .trp-hd').height(),
+      sectionWidth = $('#trip-info').width();
+
+      $('#trip-info .members-list-view').css({'padding-top': crrntHt3+47});
+      $('#trip-info .fixed-ch').css({'height': crrntHt3+55, 'width': sectionWidth});
+
+      setTimeout(function(){
+        if(navigator.userAgent.indexOf('MSIE')!==-1 || navigator.appVersion.indexOf('Trident/') > 0){
+          $('#trip-info .fixed-ch').css({'height': crrntHt3+55, 'width': sectionWidth, 'top': 47});
+        } else {
+          $('#trip-info .fixed-ch').css({'height': crrntHt3+55, 'width': sectionWidth, 'top': 0});
+        }
+      }, 800);
+
+      function valScrlAnm3(recevedVl) {
+        $('#trip-info .fixed-ch').css({'height': crrntHt3 - ((recevedVl/80)*crrntHt3)+55, 'min-height': 140});
+        $('#trip-info .img-wrp').css({'height': crrntHt3 - ((recevedVl/80)*crrntHt3), 'min-height': 43, 'background-position-y': 0 - recevedVl});
+        if (recevedVl > crrntHt3 - (recevedVl/50)*crrntHt) {
+          $('#trip-info .info-btn').fadeOut('fast');
+        } else {
+          $('#trip-info .info-btn').fadeIn('fast');
+        }
+      }
+
+      $(".mark-us-done").bind("click",function() {
+        $(this).toggleClass('active').next('.mark-us-done').toggleClass('active');
+        $(this).prev('.mark-us-done').toggleClass('active');
+      });
+
+
+    });
+  </script>
+</body>
+</html>
