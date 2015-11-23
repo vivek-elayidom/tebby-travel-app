@@ -2,6 +2,7 @@ var app = angular.module('app',[]);
 
 app.controller('FeedController', function ($scope) {
   $scope.initFeed = function () {
+    TweenLite.to("#gallery-feed", 0, {x: '0%'});
     $('#gallery-feed .grid-item').each(function() {
       var gridHeight = $('#gallery-feed .one-three').width();
       $('#gallery-feed .one-three').height(gridHeight);

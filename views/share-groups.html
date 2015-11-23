@@ -1,0 +1,35 @@
+<section class="listing-discussion h100 box-shadow-min bg-white z10" id="share-groups" ng-controller="ShareGroupsController">
+  <div class="expand-btn" ng-click="collapse($event)"><i class="fa fa-angle-right fa-lg"></i></div>
+  <a href="#" class="btn btn-primary pull-right text-normal createNwbttn">Create New</a>
+  <h2>Trips</h2>
+  <div class="scrlHeight">
+    <ul class="trip-lists" ng-init="initShareGroups()">
+      <li ng-click="viewDiscussion($event)" ng-repeat="item in list">
+        <div class="img-wrp-avtr">
+          <img src="assets/images/trvls-img.jpg" alt="">
+        </div>
+        <div class="trip-cont">
+          <h5>{{item.title}}</h5>
+          <div class="trip-img-round">
+            <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+            <span><img src="assets/images/avatar/avatar2.jpg" alt=""></span>
+            <span><img src="assets/images/avatar/avatar1.jpg" alt=""></span>
+            <span class="xtra-view"><i>+4</i></span>
+          </div>
+        </div>
+        <div class="trip-event-bttns rating-check">
+          <i class="fa fa-check"></i>
+          <i class="fa fa-eye"></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="sec-chat">
+    <div class="input-group">
+      <input type="text" class="form-control">
+      <span class="input-group-btn">
+        <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
+      </span>
+    </div>
+  </div>
+</section>
