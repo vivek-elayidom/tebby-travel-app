@@ -73,4 +73,78 @@
 	position: absolute;
 	width: 100%;
 	height: 100%;
+	padding: 0;
+	.nav-tabs {
+        @include box-shadow(1px 0px 6px 1px rgba(0, 0, 0, 0.22));
+        li {
+            margin: 0;
+            a {
+                border: none;
+                @include border-radius(0);
+                text-transform: uppercase;
+                color: #666;
+                font-weight: normal;
+                font-family: 'Oswald';
+                font-size: 1.5rem;
+    			height: 5rem;
+    			line-height: 4rem;
+    			padding: 5px 0 2px 0;
+            }
+            &.active {
+                a, a:hover, a:focus, a:active {
+                    background: transparent;
+                    @include box-shadow(none);
+                    border: none;
+                    color: $secondary-color;
+                    border-bottom: solid 3px $secondary-color;
+                }
+            }
+        }
+    }
+}
+.panel-default.left {
+	.voting-count {
+		right: 15px;
+	}
+	.voting-btn {
+		right: -15px;
+	}
+}
+
+.panel-default.right {
+	.voting-count {
+		left: 15px;
+	}
+	.voting-btn {
+		left: -15px;
+	}
+}
+
+.voting-count {
+	position: absolute;
+    font-size: 12px;
+    margin-top: 3px;
+    color: $primary-color;
+}
+
+.voting-btn {
+	position: absolute;
+	color: $primary-color;
+	padding: 4px 8px;
+    line-height: 0;
+    height: auto;
+    border-radius: 1px;
+    box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.22);
+    background-color: white;
+    border-color: #C7C7C7;
+    &:hover, &:focus {
+    	border-color: #C7C7C7;
+    	background-color: white;
+    	color: $primary-color;
+    }
+    &.pressed {
+    	box-shadow: inset 0px 1px 3px 2px rgba(0, 0, 0, 0.11);
+    	color: #666;
+    	background-color: #F1F1F1;
+    }
 }

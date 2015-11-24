@@ -915,13 +915,60 @@ section.discussion {
   .section-listing .tab-content {
     padding-top: 0; }
   .section-listing .img-wrp {
-    z-index: 0;
     top: 0;
     width: 100%;
-    background-size: cover; }
+    background-size: cover;
+    position: relative; }
     .section-listing .img-wrp img {
       width: 100%;
       height: auto; }
+    .section-listing .img-wrp .setting-sml {
+      float: right;
+      display: block;
+      margin-top: 5px;
+      margin-right: 10px;
+      color: white;
+      z-index: 99999;
+      position: relative; }
+      .section-listing .img-wrp .setting-sml.open i {
+        opacity: 1; }
+      .section-listing .img-wrp .setting-sml .dropdown-menu {
+        border: none;
+        border-radius: 2px;
+        min-width: 80px;
+        padding: 1px 0;
+        margin-left: 6px;
+        right: 0;
+        left: inherit; }
+        .section-listing .img-wrp .setting-sml .dropdown-menu li a {
+          font-size: 12px;
+          padding: 3px 10px; }
+      .section-listing .img-wrp .setting-sml i {
+        font-size: 19px !important;
+        margin-left: 5px !important;
+        margin-top: 7px !important;
+        opacity: .7;
+        cursor: pointer; }
+    .section-listing .img-wrp .rating-check {
+      float: right;
+      margin-top: 10px;
+      margin-right: 10px;
+      z-index: 99999;
+      clear: both;
+      position: relative; }
+      .section-listing .img-wrp .rating-check i {
+        cursor: pointer;
+        font-size: 16px;
+        clear: both;
+        display: block;
+        color: white; }
+        .section-listing .img-wrp .rating-check i.fa-heart-o.checked:before {
+          content: "\f004"; }
+        .section-listing .img-wrp .rating-check i:last-of-type {
+          opacity: .4;
+          margin-top: 10px; }
+          .section-listing .img-wrp .rating-check i:last-of-type.checked {
+            opacity: 1; }
     .section-listing .img-wrp h2 {
       text-transform: uppercase;
       color: white;
@@ -933,20 +980,6 @@ section.discussion {
       position: absolute;
       top: 0;
       width: 100%; }
-      .section-listing .img-wrp h2 .rating-check {
-        float: right;
-        margin-top: 5px; }
-        .section-listing .img-wrp h2 .rating-check i {
-          cursor: pointer;
-          font-size: 16px;
-          margin-right: 14px; }
-          .section-listing .img-wrp h2 .rating-check i.fa-heart-o.checked:before {
-            content: "\f004"; }
-          .section-listing .img-wrp h2 .rating-check i:last-of-type {
-            opacity: .4;
-            margin-right: 0; }
-            .section-listing .img-wrp h2 .rating-check i:last-of-type.checked {
-              opacity: 1; }
       .section-listing .img-wrp h2 span {
         display: inline;
         float: left; }
@@ -962,25 +995,6 @@ section.discussion {
         font-size: 20px;
         margin-right: 5px;
         float: left; }
-      .section-listing .img-wrp h2 .setting-sml {
-        float: left; }
-        .section-listing .img-wrp h2 .setting-sml.open i {
-          opacity: 1; }
-        .section-listing .img-wrp h2 .setting-sml .dropdown-menu {
-          border: none;
-          border-radius: 2px;
-          min-width: 80px;
-          padding: 1px 0;
-          margin-left: 6px; }
-          .section-listing .img-wrp h2 .setting-sml .dropdown-menu li a {
-            font-size: 12px;
-            padding: 3px 10px; }
-        .section-listing .img-wrp h2 .setting-sml i {
-          font-size: 14px !important;
-          margin-left: 5px !important;
-          margin-top: 7px !important;
-          opacity: .7;
-          cursor: pointer; }
       .section-listing .img-wrp h2:after {
         position: absolute;
         content: '';
@@ -1208,7 +1222,8 @@ section.discussion {
 .overlay-tab-hd {
   margin-top: -27px;
   padding: 0 7px;
-  position: relative; }
+  position: relative;
+  index: 3; }
   .overlay-tab-hd .nav-tabs {
     border-bottom: none; }
   .overlay-tab-hd:after {
@@ -1267,10 +1282,21 @@ section.discussion {
   clear: left; }
 
 .share-btn {
+  /* &.sml {
+  	height: 26px;
+  	font-size: 13px;
+  	line-height: 27px;
+  	&::after {
+  		border-top: 26px solid #01aded;
+  		border-right: 26px solid transparent;
+  		right: -26px;
+  	}
+  	} */
   background-color: #01aded;
   height: 30px;
   width: 60px;
-  top: 26%;
+  top: 52%;
+  z-index: 999999;
   position: absolute;
   color: white;
   margin-left: -2px;
@@ -1435,7 +1461,70 @@ section:hover .mCSB_scrollTools .mCSB_draggerContainer {
 .bucketlist-section {
   position: absolute;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  padding: 0; }
+  .bucketlist-section .nav-tabs {
+    -moz-box-shadow: 1px 0px 6px 1px rgba(0, 0, 0, 0.22);
+    -webkit-box-shadow: 1px 0px 6px 1px rgba(0, 0, 0, 0.22);
+    box-shadow: 1px 0px 6px 1px rgba(0, 0, 0, 0.22); }
+    .bucketlist-section .nav-tabs li {
+      margin: 0; }
+      .bucketlist-section .nav-tabs li a {
+        border: none;
+        -moz-border-radius: 0;
+        -webkit-border-radius: 0;
+        border-radius: 0;
+        text-transform: uppercase;
+        color: #666;
+        font-weight: normal;
+        font-family: 'Oswald';
+        font-size: 1.5rem;
+        height: 5rem;
+        line-height: 4rem;
+        padding: 5px 0 2px 0; }
+      .bucketlist-section .nav-tabs li.active a, .bucketlist-section .nav-tabs li.active a:hover, .bucketlist-section .nav-tabs li.active a:focus, .bucketlist-section .nav-tabs li.active a:active {
+        background: transparent;
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: none;
+        color: #C52828;
+        border-bottom: solid 3px #C52828; }
+
+.panel-default.left .voting-count {
+  right: 15px; }
+.panel-default.left .voting-btn {
+  right: -15px; }
+
+.panel-default.right .voting-count {
+  left: 15px; }
+.panel-default.right .voting-btn {
+  left: -15px; }
+
+.voting-count {
+  position: absolute;
+  font-size: 12px;
+  margin-top: 3px;
+  color: #2b6c96; }
+
+.voting-btn {
+  position: absolute;
+  color: #2b6c96;
+  padding: 4px 8px;
+  line-height: 0;
+  height: auto;
+  border-radius: 1px;
+  box-shadow: 0px 3px 3px -2px rgba(0, 0, 0, 0.22);
+  background-color: white;
+  border-color: #C7C7C7; }
+  .voting-btn:hover, .voting-btn:focus {
+    border-color: #C7C7C7;
+    background-color: white;
+    color: #2b6c96; }
+  .voting-btn.pressed {
+    box-shadow: inset 0px 1px 3px 2px rgba(0, 0, 0, 0.11);
+    color: #666;
+    background-color: #F1F1F1; }
 
 .transition {
   -moz-transition-property: all;

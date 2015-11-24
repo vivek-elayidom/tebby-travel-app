@@ -1,10 +1,10 @@
-<section class="listing-discussion h100 box-shadow-min bg-white z10" id="share-groups" ng-controller="ShareGroupsController">
-  <div class="expand-btn" ng-click="collapse($event)"><i class="fa fa-angle-right fa-lg"></i></div>
+<section class="listing-discussion h100 box-shadow-min bg-white z10" id="share-groups" data-ng-controller="ShareGroupsController">
+  <div class="expand-btn" data-ng-click="collapse()"><i class="fa fa-angle-right fa-lg"></i></div>
   <a href="#" class="btn btn-primary pull-right text-normal createNwbttn">Create New</a>
   <h2>Trips</h2>
   <div class="scrlHeight">
     <ul class="trip-lists" ng-init="initShareGroups()">
-      <li ng-click="viewDiscussion($event)" ng-repeat="item in list">
+      <li data-ng-click="viewDiscussion($event)" data-ng-repeat="item in list | filter:tripFilter">
         <div class="img-wrp-avtr">
           <img src="assets/images/trvls-img.jpg" alt="">
         </div>
@@ -26,7 +26,7 @@
   </div>
   <div class="sec-chat">
     <div class="input-group">
-      <input type="text" class="form-control">
+      <input type="text" class="form-control" data-ng-model="tripFilter">
       <span class="input-group-btn">
         <button class="btn btn-secondary" type="button"><i class="fa fa-search"></i></button>
       </span>

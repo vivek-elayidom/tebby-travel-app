@@ -1,4 +1,4 @@
-<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+<header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner" ng-controller="HeaderController">
   <div class="container">
     <div class="navbar-header">
       <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar" aria-controls="bs-navbar" aria-expanded="false">
@@ -13,7 +13,7 @@
 
       <ul class="nav navbar-nav navbar-right">
         <li><a href="trips1.html">Trips</a></li>
-        <li><a href="bucketlist.html" id="bl-btn" ng-click="blTrigger($event)">Bucket list</a></li>
+        <li><a href="#" id="bl-btn" ng-click="blTrigger($event)">Bucket list</a></li>
         <li><a href="profile.html">My account</a></li>
         <li class="filled"><a href="#">Sign in</a></li>
       </ul>

@@ -1,16 +1,35 @@
-var app = angular.module('app',[]);
+var app = angular.module('logAloud',[]);
 
-app.controller('PageController', function ($scope) {
+app.controller('PageController', ['$scope', function($scope){
 	
+}]);
+
+app.directive('pageHeader', function() {
+	return {
+		templateUrl: 'views/header.html'
+	}
+})
+.directive('bucketList', function() {
+	return {
+		templateUrl: 'views/bucketlist.html'
+	}
+})
+.directive('shareGroups', function() {
+	return {
+		templateUrl: 'views/share-groups.html'
+	}
+})
+.directive('discussionList', function() {
+	return {
+		templateUrl: 'views/discussion-list.html'
+	}
 });
 
-// Header Controller
-app.controller('HeaderController', function ($scope, $compile) {
+
+app.controller('HeaderController', function ($scope) {
 	activeBucketlist = 0;
 	$scope.blTrigger = function ($event) {
 		$event.preventDefault();
-		// var compiledHtml = $compile("<div data-bucketlist></div>")($scope);
-		// $('#BucketlistDirective').html(compiledHtml);
 		setTimeout(function() {
 			if (activeBucketlist === 0){
 				TweenLite.to("#gallery-feed", 0, {x: '0%'});
@@ -31,11 +50,6 @@ app.controller('HeaderController', function ($scope, $compile) {
 			TweenLite.to("#bucketlist .expand-btn", 0.5, {left: '-15'});
 			TweenLite.to("#share-groups .expand-btn", 0.5, {left: '-15', delay: 0.2});
 		}, 30);
-	}
-})
-.directive('pageHeader', function() {
-	return {
-		templateUrl: 'views/header.html'
 	}
 });
 
@@ -68,7 +82,6 @@ app.controller('FeedController', function ($scope, $window) {
 	}
 });
 
-
 // Bucketlist Controller
 app.controller('BucketlistController', function ($scope, $compile, $http) {
 	$scope.list = [],
@@ -88,24 +101,6 @@ app.controller('BucketlistController', function ($scope, $compile, $http) {
 				theme:"dark-thin"
 			});
 		});
-
-		// $.ajax({
-		// 	url: 'data/listings.json',
-		// 	method: 'get',
-		// 	dataType: 'json'
-		// })
-		// .done(function (data, textStatus, jqXHR) {
-		// 	$scope.list = data;
-		// 	pageHeight = $(window).outerHeight(),
-		// 	headerHeight = $('header.navbar').outerHeight(),
-		// 	sectionTitle = $('.bucketlist-section h2').outerHeight();
-
-		// 	TweenLite.to("#bucketlist, #listing", 0, {x: '100%'});
-		// 	$('.bucketlistScrll').css('height', pageHeight - (headerHeight+sectionTitle+70));
-		// 	$(".bucketlistScrll").mCustomScrollbar({
-		// 		theme:"dark-thin"
-		// 	});
-		// });
 	},
 	$scope.collapse = function () {
 		TweenLite.to("#bucketlist", 1, {x: '100%', delay: 0.2});
@@ -115,11 +110,6 @@ app.controller('BucketlistController', function ($scope, $compile, $http) {
 		TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
 	},
 	$scope.share = function () {
-		// function compile() {
-		// 	var compiledHtml = $compile("<div data-share-groups></div>")($scope);
-		// 	$('#ShareGroupsDirective').html(compiledHtml);
-		// }
-		// compile();
 		TweenLite.to("#share-groups", 1, {x: '0%', delay: 0.2});
 		TweenLite.to("#discussion-list, #trip-info", 2, {x: '200%', delay: 0.2});
 		TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
@@ -137,11 +127,6 @@ app.controller('BucketlistController', function ($scope, $compile, $http) {
 		TweenLite.to("#bucketlist .expand-btn", 0.5, {left: '0%', delay: 2});
 	},
 	$scope.initBucketlist();
-})
-.directive('bucketList', function() {
-	return {
-		templateUrl: 'views/bucketlist.html'
-	}
 });
 
 // Share Groups Controller
@@ -186,11 +171,6 @@ app.controller('ShareGroupsController', function ($scope) {
 		TweenLite.to("#discussion-list", 1, {x: '0%', delay: 1.2});
 
 		TweenLite.to("#share-groups .expand-btn", 0.5, {left: '0%', delay: 1.2});
-	}
-})
-.directive('shareGroups', function() {
-	return {
-		templateUrl: 'views/share-groups.html'
 	}
 });
 
@@ -279,9 +259,4 @@ app.controller('DiscussionListController', function ($scope, $timeout) {
 		TweenLite.to("#share-groups .expand-btn", 0.5, {left: '-15', delay: 0.2});
 	}
 	$timeout($scope.initDiscussionList(), 0);
-})
-.directive('discussionList', function() {
-	return {
-		templateUrl: 'views/discussion-list.html'
-	}
 });

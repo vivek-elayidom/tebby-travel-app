@@ -9,39 +9,87 @@
 	font-weight: 300;
 	margin: 0;
 	.img-wrp {
-		//position: absolute;
-		z-index: 0;
 		top: 0;
 		width: 100%;
 		background-size: cover;
+		position: relative;
 
 		img {
 			width: 100%;
 			height: auto;
 		}
-		h2 {
-			.rating-check {
-				float: right;
-				margin-top: 5px;
-				i {
-					cursor: pointer;
-					font-size: 16px;
-					margin-right: 14px;
-					&.fa-heart-o {
-						&.checked:before {
-							content: "\f004";
-						}
-					}
 
-					&:last-of-type {
-						opacity: .4;
-						margin-right: 0;
-						&.checked {
-							opacity: 1;
-						}
+		.setting-sml {
+			float: right;
+    display: block;
+    margin-top: 5px;
+    margin-right: 10px;
+    color: white;
+    z-index: 99999;
+    position: relative;
+
+			&.open {
+				i {
+					opacity: 1;
+				}
+			}
+			.dropdown-menu {
+				border: none;
+				border-radius: 2px;
+				min-width: 80px;
+				padding: 1px 0;
+				margin-left: 6px;
+				right: 0;
+    			left: inherit;
+				li {
+					a {
+						font-size: 12px;
+						padding: 3px 10px;
 					}
 				}
 			}
+
+			i {
+				font-size: 19px !important;
+				margin-left: 5px !important;
+				margin-top: 7px !important;
+				opacity: .7;
+				cursor: pointer;
+			}
+		}
+
+		.rating-check {
+			float: right;
+			margin-top: 10px;
+			margin-right: 10px;
+			z-index: 99999;
+			clear: both;
+			position: relative;
+			i {
+				cursor: pointer;
+				font-size: 16px;
+
+				clear: both;
+				display: block;
+				color: white;
+				&.fa-heart-o {
+					&.checked:before {
+						content: "\f004";
+					}
+				}
+
+				&:last-of-type {
+					opacity: .4;
+					margin-top: 10px;
+					&.checked {
+						opacity: 1;
+					}
+				}
+			}
+		}
+
+		h2 {
+			
 			span {
 				display: inline;
 				float: left;
@@ -60,35 +108,7 @@
 				margin-right: 5px;
 				float: left;
 			}
-			.setting-sml {
-				&.open {
-					i {
-						opacity: 1;
-					}
-				}
-				.dropdown-menu {
-					border: none;
-					border-radius: 2px;
-					min-width: 80px;
-					padding: 1px 0;
-					margin-left: 6px;
-					li {
-						a {
-							font-size: 12px;
-							padding: 3px 10px;
-						}
-					}
-				}
-
-				float: left;
-				i {
-					font-size: 14px !important;
-					margin-left: 5px !important;
-					margin-top: 7px !important;
-					opacity: .7;
-					cursor: pointer;
-				}
-			}
+			
 			text-transform: uppercase;
 			color: white;
 			z-index: 11111;
@@ -376,6 +396,7 @@
 	margin-top: -27px;
 	padding: 0 7px;
 	position: relative;
+	index: 3;
 	.nav-tabs {
 		border-bottom: none;
 	}
@@ -445,42 +466,53 @@
 }
 
 .share-btn {
-	background-color: $blue-bright;
-	height: 30px;
-	width: 60px;
-	top: 26%;
-	position: absolute;
-	color: white;
-	margin-left: -2px;
-	text-align: left;
-	padding-left: 18px;
-	line-height: 30px;
-	text-transform: uppercase;
-	@include box-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
-	&::after {
-		content: '';
-		width: 0;
-		height: 0;
-		border-top: 30px solid $blue-bright;
-		border-right: 30px solid transparent;
+	/* &.sml {
+		height: 26px;
+		font-size: 13px;
+		line-height: 27px;
+		&::after {
+			border-top: 26px solid #01aded;
+			border-right: 26px solid transparent;
+			right: -26px;
+		}
+		} */
+		background-color: $blue-bright;
+		height: 30px;
+		width: 60px;
+		top: 52%;
+		z-index: 999999;
 		position: absolute;
-		right: -30px;
-	}
-	&:hover, &:focus {
-		opacity: .9;
 		color: white;
-		text-decoration: none;
+		margin-left: -2px;
+		text-align: left;
+		padding-left: 18px;
+		line-height: 30px;
+		text-transform: uppercase;
+		@include box-shadow(2px 2px 3px rgba(0, 0, 0, 0.25));
+		&::after {
+			content: '';
+			width: 0;
+			height: 0;
+			border-top: 30px solid $blue-bright;
+			border-right: 30px solid transparent;
+			position: absolute;
+			right: -30px;
+		}
+		&:hover, &:focus {
+			opacity: .9;
+			color: white;
+			text-decoration: none;
+		}
 	}
-}
 
 
-/*-------------------*/
+	/*-------------------*/
 
-.listing-discussion {
-	color: $text-color;
-	position: absolute;
-	width: 100%;
-	height: 100%;
+	.listing-discussion {
+		color: $text-color;
+		position: absolute;
+		width: 100%;
+		height: 100%;
 	// padding: 0 8px 0 12px;
 	h2 {
 		color: $primary-color;

@@ -1,16 +1,13 @@
 var app = angular.module('app',[]);
 
-app.controller('PageController', function ($scope) {
-	
-});
-
 // Header Controller
-app.controller('HeaderController', function ($scope, $compile) {
+app.controller('PageController', function ($scope, $rootScope) {
 	activeBucketlist = 0;
+	$rootScope.HeaderURL = 'views/header.html';
+	$rootScope.FeedURL = 'views/feed.html';
 	$scope.blTrigger = function ($event) {
 		$event.preventDefault();
-		// var compiledHtml = $compile("<div data-bucketlist></div>")($scope);
-		// $('#BucketlistDirective').html(compiledHtml);
+		$scope.BucketlistURL = 'views/bucketlist.html';
 		setTimeout(function() {
 			if (activeBucketlist === 0){
 				TweenLite.to("#gallery-feed", 0, {x: '0%'});
@@ -30,17 +27,12 @@ app.controller('HeaderController', function ($scope, $compile) {
 
 			TweenLite.to("#bucketlist .expand-btn", 0.5, {left: '-15'});
 			TweenLite.to("#share-groups .expand-btn", 0.5, {left: '-15', delay: 0.2});
-		}, 30);
-	}
-})
-.directive('pageHeader', function() {
-	return {
-		templateUrl: 'views/header.html'
+		}, 10);
 	}
 });
 
 // Feed Controller
-app.controller('FeedController', function ($scope, $window) {
+app.controller('FeedController', function ($scope, $timeout) {
 	$scope.initFeed = function () {
 		TweenLite.to("#gallery-feed", 0, {x: '0%'});
 		$('#gallery-feed .grid-item').each(function() {
@@ -57,56 +49,35 @@ app.controller('FeedController', function ($scope, $window) {
 			}
 		});
 		$("#gallery-feed .photo-grid").mCustomScrollbar({
-          theme:"dark-thin"
-        });
-	};
-	$scope.initFeed();
-})
-.directive('galleryFeed', function() {
-	return {
-		templateUrl: 'views/feed.html'
-	}
+			theme:"dark-thin"
+		});
+	},
+	$timeout($scope.initFeed(), 0);
 });
 
 
 // Bucketlist Controller
-app.controller('BucketlistController', function ($scope, $compile, $http) {
-	$scope.list = [],
+app.controller('BucketlistController', function ($scope, $rootScope) {
 	$scope.initBucketlist = function () {
-		$http({
-			method: 'GET',
-			url: 'data/listings.json'
-		}).success(function(data) {
-			$scope.list = data;
-			pageHeight = $(window).outerHeight(),
-			headerHeight = $('header.navbar').outerHeight(),
-			sectionTitle = $('.bucketlist-section h2').outerHeight();
+		pageHeight = $(window).outerHeight(),
+		headerHeight = $('header.navbar').outerHeight(),
+		sectionTitle = $('.bucketlist-section h2').outerHeight();
 
-			TweenLite.to("#bucketlist, #listing", 0, {x: '100%'});
-			$('.bucketlistScrll').css('height', pageHeight - (headerHeight+sectionTitle+70));
-			$(".bucketlistScrll").mCustomScrollbar({
-				theme:"dark-thin"
-			});
+		TweenLite.to("#bucketlist, #listing", 0, {x: '100%'});
+		$('.bucketlistScrll').css('height', pageHeight - (headerHeight+sectionTitle+20));
+		$(".bucketlistScrll").mCustomScrollbar({
+			theme:"dark-thin"
 		});
-
-		// $.ajax({
-		// 	url: 'data/listings.json',
-		// 	method: 'get',
-		// 	dataType: 'json'
-		// })
-		// .done(function (data, textStatus, jqXHR) {
-		// 	$scope.list = data;
-		// 	pageHeight = $(window).outerHeight(),
-		// 	headerHeight = $('header.navbar').outerHeight(),
-		// 	sectionTitle = $('.bucketlist-section h2').outerHeight();
-
-		// 	TweenLite.to("#bucketlist, #listing", 0, {x: '100%'});
-		// 	$('.bucketlistScrll').css('height', pageHeight - (headerHeight+sectionTitle+70));
-		// 	$(".bucketlistScrll").mCustomScrollbar({
-		// 		theme:"dark-thin"
-		// 	});
-		// });
 	},
+	$scope.list = [
+		{title: "Movenpick Hotel & Spa", type:"5 Star Hotel", address: "115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054", phone: "080 4300 1000", rate: "6686", duration: "per night"},
+		{title: "Movenpick Hotel & Spa", type:"5 Star Hotel", address: "115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054", phone: "080 4300 1000", rate: "6686", duration: "per night"},
+		{title: "Movenpick Hotel & Spa", type:"5 Star Hotel", address: "115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054", phone: "080 4300 1000", rate: "6686", duration: "per night"},
+		{title: "Movenpick Hotel & Spa", type:"5 Star Hotel", address: "115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054", phone: "080 4300 1000", rate: "6686", duration: "per night"},
+		{title: "Movenpick Hotel & Spa", type:"5 Star Hotel", address: "115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054", phone: "080 4300 1000", rate: "6686", duration: "per night"},
+		{title: "Movenpick Hotel & Spa", type:"5 Star Hotel", address: "115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054", phone: "080 4300 1000", rate: "6686", duration: "per night"},
+		{title: "Movenpick Hotel & Spa", type:"5 Star Hotel", address: "115, Gokula Extension, HMT Road, Near BEL Circle, Bengaluru, Karnataka 560054", phone: "080 4300 1000", rate: "6686", duration: "per night"}
+	],
 	$scope.collapse = function () {
 		TweenLite.to("#bucketlist", 1, {x: '100%', delay: 0.2});
 		TweenLite.to("#share-groups", 2, {x: '200%', delay: 0.2});
@@ -115,14 +86,12 @@ app.controller('BucketlistController', function ($scope, $compile, $http) {
 		TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
 	},
 	$scope.share = function () {
-		// function compile() {
-		// 	var compiledHtml = $compile("<div data-share-groups></div>")($scope);
-		// 	$('#ShareGroupsDirective').html(compiledHtml);
-		// }
-		// compile();
-		TweenLite.to("#share-groups", 1, {x: '0%', delay: 0.2});
-		TweenLite.to("#discussion-list, #trip-info", 2, {x: '200%', delay: 0.2});
-		TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+		$rootScope.ShareGroupsURL = 'views/share-groups.html';
+		setTimeout(function() {
+			TweenLite.to("#share-groups", 1, {x: '0%', delay: 0.2});
+			TweenLite.to("#discussion-list, #trip-info", 2, {x: '200%', delay: 0.2});
+			TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
+		}, 10);
 	},
 	$scope.view = function () {
 		TweenLite.to("#listing", 1, {x: '-100%', delay: 0.2});
@@ -135,12 +104,6 @@ app.controller('BucketlistController', function ($scope, $compile, $http) {
 		TweenLite.to("#trip-info", 0, {opacity: 0, delay: 1.2});
 
 		TweenLite.to("#bucketlist .expand-btn", 0.5, {left: '0%', delay: 2});
-	},
-	$scope.initBucketlist();
-})
-.directive('bucketList', function() {
-	return {
-		templateUrl: 'views/bucketlist.html'
 	}
 });
 
@@ -151,9 +114,7 @@ app.controller('ShareGroupsController', function ($scope) {
 		headerHeight = $('header.navbar').outerHeight(),
 		titleHeight = $('#share-groups').find('h2').outerHeight(),
 		sectionWidth = $('#share-groups').width(),
-		searchHeight = $('#share-groups').find('.sec-chat').outerHeight();
-
-		TweenLite.to("#share-groups, #trip-info", 0, {x: '200%'});
+		chatHeight = $('#share-groups').find('.sec-chat').outerHeight();
 
 		$('#share-groups .scrlHeight').height(pageHeight-(headerHeight+titleHeight+chatHeight+15));
 		$('#share-groups .sec-chat').css({'width': sectionWidth});
@@ -166,17 +127,18 @@ app.controller('ShareGroupsController', function ($scope) {
 	},
 	$scope.list = [
 		{title: "Visit to-Nainital Mussoorie and Dehradum"},
-		{title: "ABDF"},
-		{title: "GHNG"},
-		{title: "AHSR"},
-		{title: "4785"},
-		{title: "qwer"},
 		{title: "Visit to-Nainital Mussoorie and Dehradum"},
-		{title: "awed-1234"},
-		{title: "zasw-7854"},
-		{title: "rewt-rets"}
+		{title: "Visit to-Nainital Mussoorie and Dehradum"},
+		{title: "Visit to-Nainital Mussoorie and Dehradum"},
+		{title: "Visit to-Nainital Mussoorie and Dehradum"},
+		{title: "Visit to-Nainital Mussoorie and Dehradum"},
+		{title: "Visit to-Nainital Mussoorie and Dehradum"},
+		{title: "Visit to-Nainital Mussoorie and Dehradum"},
+		{title: "Visit to-Nainital Mussoorie and Dehradum"},
+		{title: "Visit to-Nainital Mussoorie and Dehradum"}
 	],
-	$scope.collapse = function () {
+	$scope.collapse = function ($event) {
+		$event.preventDefault();
 		TweenLite.to("#share-groups", 2, {x: '200%', delay: 0.2});
 	},
 	$scope.viewDiscussion = function ($event) {
@@ -199,8 +161,6 @@ app.controller('DiscussionListController', function ($scope, $timeout) {
 	$scope.initDiscussionList = function () {
 		sectionWidth = $('#discussion-list').width(),
 		chatHeight = $('#discussion-list').find('.sec-chat').outerHeight();
-
-		TweenLite.to("#discussion-list", 0, {x: '200%'});
 
 		$('.img-wrp').each(function() {
 			if(!($(this).hasClass('prflImg'))) {
