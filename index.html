@@ -14,11 +14,11 @@
         <script src="assets/js/respond.js"></script>
     <![endif]-->
 </head>
-<body data-ng-app="logAloud">
+<body data-ng-app="logAloud" data-ng-controller="PageController">
   <div class="google-map z0"></div>
-  <div class="page" data-ng-controller="PageController">
+  <div class="page">
     <!-- Header Start -->
-      <div data-page-header></div>
+      <div data-ng-include="'views/header.html'"></div>
     <!-- Header End -->
     <div class="container-fluid content-wrapper">
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100 rm-offset">
@@ -26,8 +26,7 @@
       </div>
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100 rm-offset">
         <!-- Discussion List Section Start -->
-        <!-- <span id="DiscussionListDirective"></span> -->
-        <div data-discussion-list></div>
+        <div data-ng-include="'views/discussion-list.html'"></div>
         <!-- Discussion List Section End -->
 
         <!-- Trip Info Starts Here -->
@@ -71,16 +70,14 @@
         <!-- Trip Info Ends Here -->
 
         <!-- Share Groups Section Start -->
-        <!-- <div id="ShareGroupsDirective"></div> -->
-        <div data-share-groups></div>
+        <div data-ng-include="'views/share-groups.html'"></div>
         <!-- Share Groups Section End -->
       </div>
      
       <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 h100 rm-offset">
       
         <!-- Bucketlist Section Start -->
-          <!-- <div id="BucketlistDirective"></div> -->
-          <div data-bucket-list></div>
+          <div data-ng-include="'views/bucketlist.html'"></div>
         <!-- Bucketlist Section Start -->
 
         <!-- Listing Section Start -->
@@ -90,39 +87,32 @@
               <a href="#" class="share-btn">Share</a>
               <img src="assets/images/rht-img.jpg" alt="">
               <h2><i class="fa fa-bicycle"></i><span>Trekking and River Rafting</span>
-                <div class="dropdown setting-sml">
-                  <i class="dropdown-toggle fa fa-cog" type="button" data-toggle="dropdown" >
-                  </i>
-                  <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                    <li><a href="#">Edit</a></li>
-                    <li><a href="#">Flag Listing</a></li>
-                    <li><a href="#">Claim Listing</a></li>
-                  </ul>
-                </div>
-                <div class="rating-check">
-                  <i class="fa fa-heart-o"></i>
-                  <i class="fa fa-check"></i>
-                </div>
+                
+                
                 <small>Rishikesh, Utterkhand</small>
+
               </h2>
+             <div class="dropdown setting-sml">
+                <i class="dropdown-toggle fa fa-cog" type="button" data-toggle="dropdown" >
+                </i>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                  <li><a href="#">Edit</a></li>
+                  <li><a href="#">Flag Listing</a></li>
+                  <li><a href="#">Claim Listing</a></li>
+                </ul>
+              </div>
+
+              <div class="rating-check">
+                <i class="fa fa-heart-o"></i>
+                <i class="fa fa-check"></i>
+              </div>
+
             </div>
             <div role="tabpanel" class="overlay-tab-hd">
               <ul class="nav nav-tabs" role="tablist">
                 <li role="presentation" class="active">
                   <a href="#discussionTab" aria-controls="discussionTab" role="tab" data-toggle="tab">Quick&nbsp;Info</a>
                 </li>
-                <!-- <li role="presentation">
-                  <a href="#itineraryTab" aria-controls="itineraryTab" role="tab" data-toggle="tab">Itinerary</a>
-                </li>
-                <li role="presentation">
-                  <a href="#staysTab" aria-controls="staysTab" role="tab" data-toggle="tab">Stays</a>
-                </li>
-                <li role="presentation">
-                  <a href="#gearTab" aria-controls="gearTab" role="tab" data-toggle="tab">Gear</a>
-                </li>
-                <li role="presentation">
-                  <a href="#pricingTab" aria-controls="pricingTab" role="tab" data-toggle="tab">Pricing</a>
-                </li> -->
               </ul>
             </div>
             <div class="after-arrng">
@@ -139,10 +129,6 @@
                     <a href="#"><i class="fa fa-flash"></i><span>Intermediate</span></a>
                   </div>
                 </div>
-                <!-- <div role="tabpanel" class="tab-pane" id="itineraryTab">Itinerary</div>
-                <div role="tabpanel" class="tab-pane" id="staysTab">Stays</div>
-                <div role="tabpanel" class="tab-pane" id="gearTab">Gear</div>
-                <div role="tabpanel" class="tab-pane" id="pricingTab">Pricing</div> -->
               </div>
               <div class="sml-tags">
                 <ul>
@@ -661,7 +647,7 @@
         <!-- Listing Section End -->
 
         <!-- Gallery Feed Section Start -->
-        <span data-gallery-feed></span>
+        <span data-ng-include="'views/feed.html'"></span>
         <!-- Gallery Feed Section End -->
       </div>
     </div>
@@ -699,8 +685,6 @@
   <script src="assets/js/jquery-1.11.2.min.js"></script>
   <script src="assets/js/bootstrap.js"></script>
   <script src="assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
-  <!--<script src="assets/js/scrollReveal.min.js"></script>-->
-  <!--<script src="assets/js/jquery.transit.min.js"></script>-->
 
   <script src="assets/js/moment.min.js"></script>
   <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
@@ -722,8 +706,6 @@
   <!--<script src="assets/js/scrollbars.min.js"></script>-->
   <script src="assets/js/controllers/app.js"></script>
   <!--<script src="assets/js/controllers/bucketlist.js"></script>-->
-  <!--<script src="assets/js/controllers/feed.js"></script>
-  <script src="assets/js/controllers/header.js"></script>-->
 
   <script>
 

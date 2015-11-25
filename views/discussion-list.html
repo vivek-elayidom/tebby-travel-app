@@ -1,4 +1,4 @@
-<section class="discussion h100 box-shadow-min bg-grey z10" id="discussion-list" ng-controller="DiscussionListController">
+<section class="discussion h100 box-shadow-min bg-grey z10" id="discussion-list" data-ng-controller="DiscussionListController">
   <div class="fixed-ch">
     <div class="img-wrp">
       <img src="assets/images/kashmir.jpg" alt="" >
@@ -32,7 +32,7 @@
     <div class="tab-content h100">
       <div role="tabpanel" class="tab-pane h100 active" id="discussion">
         <div class="discussion-Tab">
-          <div class="panel panel-default left">
+          <!-- <div class="panel panel-default left">
             <div class="voting-count">20</div>
             <button class="btn btn-default voting-btn"><i class="fa fa-caret-up"></i></button>
             <div class="panel-heading">
@@ -79,8 +79,8 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="panel panel-default right">
+          </div> -->
+          <!-- <div class="panel panel-default right">
             <div class="voting-count">20</div>
             <button class="btn btn-default voting-btn"><i class="fa fa-caret-up"></i></button>
             <div class="panel-heading">
@@ -127,19 +127,52 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="panel panel-default left">
-            <div class="voting-count">20</div>
+          </div> -->
+          <div class="panel panel-default" data-ng-repeat="item in discussion" data-ng-class="$even ? 'left' : 'right'">
+            <div class="voting-count">{{item.votes}}</div>
             <button class="btn btn-default voting-btn"><i class="fa fa-caret-up"></i></button>
             <div class="panel-heading">
-              <div class="pull-left"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt=""></div>
-              <div class="pull-left">Madhusoodanan Nair</div>
+              <div data-ng-class="$even ? 'pull-left' : 'pull-right'"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt=""></div>
+              <div data-ng-class="$even ? 'pull-left' : 'pull-right'">{{item.user}}</div>
               <div class="clearfix"></div>
             </div>
             <div class="panel-body">
               <div class="row">
+                <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
+                  <i class="fa fa-bed fa-lg"></i>
+                </div>
+                <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11 offset-L-5">
+                  <div class="row" data-ng-repeat="L1 in item.listing" ng-if="item.listing!=''">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <h5>{{L1.title}}</h5>
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                      {{L1.type}}
+                    </div>
+                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 text-right">
+                      {{L1.rate}} {{L1.duration}}
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <p>Address: </p>
+                      <p>{{L1.address}}</p>
+                      <p>Phone: {{L1.phone}}</p>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                      <div data-ng-class="$even ? 'pull-left' : 'pull-right'">
+                        <div class="offset-T-5">
+                          <button type="button" class="btn btn-default btn-share">Share</button>
+                          <button type="button" class="btn btn-primary btn-view">View</button>
+                          <div class="clearfix"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <hr ng-if="item.listing != '' && item.message != ''">
+              <div class="row">
                 <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, quam quas consequatur veniam vel aut ullam. Obcaecati quidem, cum magnam culpa ad mollitia, atque similique minima incidunt quod dolore a!</p>
+                  <p>{{item.message}}</p>
                 </div>
               </div>
               <div class="row">

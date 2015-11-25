@@ -1,18 +1,18 @@
 <section class="bucketlist-section box-shadow-min bg-white z45" id="bucketlist" data-ng-controller="BucketlistController">
-  <div class="expand-btn"><i class="fa fa-angle-right fa-lg"></i></div>
+  <div class="expand-btn" data-ng-click="collapse()"><i class="fa fa-angle-right fa-lg"></i></div>
   <div role="tabpanel" class="h100">
     <ul class="nav nav-tabs nav-justified" role="tablist">
       <li role="presentation" class="active">
         <a href="#saved-listings" aria-controls="saved-listings" role="tab" data-toggle="tab">Saved listings</a>
       </li>
       <li role="presentation">
-        <a href="#saved-logs" aria-controls="saved-logs" role="tab" data-toggle="tab">Saved Logs</a>
+        <a href="#saved-logs" aria-controls="saved-logs" role="tab" data-toggle="tab" data-ng-click="savedLogsTab()">Saved Logs</a>
       </li>
     </ul>
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane h100 active" id="saved-listings">
         <div class="bucketlistScrll">
-          <div class="panel panel-default" data-ng-repeat="item in list track by $index" data-ng-init="initBucketlist()">
+          <div class="panel panel-default" data-ng-repeat="item in savedListings">
             <div class="panel-body">
               <div class="row">
                 <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 rm-r-offset">
@@ -55,144 +55,31 @@
           <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 h100 rm-offset">
             <div class="logs-tab">
               <ul class="log-view-listing">
-                <li>
+                <li data-ng-repeat="item in savedLogs">
                   <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
-                    <span>22/7/14</span>
+                  <span>{{item.date}}</span>
                   </div>
                   <div class="rht-algn">
-                    <h4>River rafting in kodai is awesome
+                    <h4>{{item.title}}
                       <span class="toltp-file">
                         <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
                         <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
                           <i class="fa fa-file-text"></i>
                         </a>
-                      </span></h4>
-                      <small>Sinu moosa</small>
-                      <p>
-                        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
-                      </p>
-                      <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
-                      <span>22/7/14</span>
-                    </div>
-                    <div class="rht-algn">
-                      <h4>River rafting in kodai is awesome
-                        <span class="toltp-file">
-                          <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
-                          <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
-                            <i class="fa fa-file-text"></i>
-                          </a>
-                        </span></h4>
-                        <small>Sinu moosa</small>
-                        <p>
-                          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
-                        </p>
-                        <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
-                      </div>
-                    </li>
-                    <li>
-                      <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
-                        <span>22/7/14</span>
-                      </div>
-                      <div class="rht-algn">
-                        <h4>River rafting in kodai is awesome
-                          <span class="toltp-file">
-                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
-                            <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
-                              <i class="fa fa-file-text"></i>
-                            </a>
-                          </span></h4>
-                          <small>Sinu moosa</small>
-                          <p>
-                            "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
-                          </p>
-                          <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
-                        </div>
-                      </li>
-                      <li>
-                        <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
-                          <span>22/7/14</span>
-                        </div>
-                        <div class="rht-algn">
-                          <h4>River rafting in kodai is awesome
-                            <span class="toltp-file">
-                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
-                              <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
-                                <i class="fa fa-file-text"></i>
-                              </a>
-                            </span></h4>
-                            <small>Sinu moosa</small>
-                            <p>
-                              "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
-                            </p>
-                            <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div> 
-                          </div>
-                        </li>
-                        <li>
-                          <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
-                            <span>22/7/14</span>
-                          </div>
-                          <div class="rht-algn">
-                            <h4>River rafting in kodai is awesome
-                              <span class="toltp-file">
-                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
-                                <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
-                                  <i class="fa fa-file-text"></i>
-                                </a>
-                              </span></h4>
-                              <small>Sinu moosa</small>
-                              <p>
-                                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
-                              </p>
-                              <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
-                              <span>22/7/14</span>
-                            </div>
-                            <div class="rht-algn">
-                              <h4>River rafting in kodai is awesome
-                                <span class="toltp-file">
-                                  <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
-                                  <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
-                                    <i class="fa fa-file-text"></i>
-                                  </a>
-                                </span></h4>
-                                <small>Sinu moosa</small>
-                                <p>
-                                  "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
-                                </p>
-                                <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
-                              </div>
-                            </li>
-                            <li>
-                              <div class="pull-left img-cont"><img src="assets/images/avatar/avatar1.jpg" class="img-circle" alt="">
-                                <span>22/7/14</span>
-                              </div>
-                              <div class="rht-algn">
-                                <h4>River rafting in kodai is awesome
-                                  <span class="toltp-file">
-                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample"><i class="fa fa-file-image-o"></i></a>
-                                    <a href="#" data-toggle="tooltip" data-placement="left" title="Tooltip Sample">
-                                      <i class="fa fa-file-text"></i>
-                                    </a>
-                                  </span></h4>
-                                  <small>Sinu moosa</small>
-                                  <p>
-                                    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard has been the industry's standard
-                                  </p>
-                                  <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
-                                </div>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                      </span>
+                    </h4>
+                    <small>{{item.user}}</small>
+                    <p>
+                      {{item.description}}
+                    </p>
+                    <div class="arr-tip"><i class="fa fa-angle-down" data-placement="bottom" title="Tooltip Sample" data-toggle="tooltip"></i></div>
                   </div>
-                </div>
-              </section>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
